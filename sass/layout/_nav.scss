@@ -1,0 +1,80 @@
+// Wrapper for logo and top nav
+.mobile-nav-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 15px 25px 15px;
+}
+
+// Login, Search and Hamburger
+.mobile-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+    padding-left: 10px;
+  }
+}
+
+// Main Navigation toggled with Hamburger
+#main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.show {
+  display: none;
+}
+
+.show1 {
+  display: none;
+}
+
+#sub-menu-1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// 2. Level Navigation with blue bg
+.blue-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #282f54;
+  border-bottom: 1px solid white;
+}
+
+.gray-li {
+  display: block;
+  padding: 10px 10px 10px 20px;
+  background-color: #dfe0e6;
+  border-bottom: 1px solid white;
+
+  &::before {
+    content: url("assets/icons/iconmonstr-angel-right-thin-16.png");
+  font-size: 22px;
+  padding-right: 5px;
+  display: inline-block;
+  vertical-align: sub;
+  }
+}
+
+.white-li {
+  display: block;
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+
+@media screen and (min-width: 1041px) {
+  /* top menu shows and desktop view is achieved */
+}

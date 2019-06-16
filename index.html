@@ -8,34 +8,63 @@
     <title>Taking control - Lloyd's - The world’s specialist insurance market. Also known as Lloyd's of London; is a market where members join together as syndicates to insure risks.</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <nav>
+    <nav class="mobile-nav-box">
       <a class ="logo" href="https://www.lloyds.com/">LLOYD'S</a>
       <ul class="mobile-nav">
         <li><a href="https://www.lloyds.com/Account/Login"><img class="menu-icon" src="assets/icons/iconmonstr-user-7-48.png" /></a></li>
         <li><a href="#"><img class="menu-icon" src="assets/icons/iconmonstr-magnifier-6-48.png" /></a></li>
-        <li><a href="#"><img class="menu-icon" src="assets/icons/iconmonstr-menu-1-48.png" /></a></li>
+        <li><img class="menu-icon" onclick="showHam()" src="assets/icons/iconmonstr-menu-1-48.png" /></li>
       </ul>
+    </nav>
 
-      <!-- this is hidden on default and will open with click on hamburger menu-->
-      <ul id="main-menu">
-          <li><a href="">News and risk insight</a></li>
-          <li><a href="">Market directory</a></li>
-          <li><a href="">Market resources</a></li>
-          <li><a href="">Tools and systems</a></li>
-          <li><a href="">Lloyd's around the world</a></li>
-          <li><a href="">Aboutd</a></li>
-          <li><a href="">Brokers</a></li>
-          <li><a href="">Coverholders</a></li>
-          <li><a href="">Insurer</a></li>
-          <li><a href="">Policyholders</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Investor Relations</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Login/register</a></li>
+    <!-- this is hidden on default and will open with click on hamburger menu-->
+    <nav>
+      <ul id="main-menu" class="show">
+        <li class="blue-li">
+          <a href="https://www.lloyds.com/news-and-risk-insight">News and risk insight</a>
+          <img class="plus-icon" onclick="showSub1()" src="assets/icons/iconmonstr-plus-2-24.png" />
+        </li>
+        <ul id="sub-menu-1" class="show1">
+            <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li class="gray-li">Press releases</li></a>
+            <a href="https://www.lloyds.com/news-and-risk-insight/news"><li class="gray-li">News</li></a>
+            <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports"><li class="gray-li">Risk reports</li></a>
+            <a href="https://www.lloyds.com/events"><li class="gray-li">Events</li></a>
+            <a href="https://www.lloydsbrussels.com/"><li class="gray-li">Lloyd’s subsidiary in Brussels</li></a>
+            <a href="https://www.lloydslab.com/"><li class="gray-li">Lloyd's Lab</li></a>
+            <a href="https://www.lloyds.com/cityriskindex/"><li class="gray-li">City Risk Index</li></a>
+              <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts"><li class="gray-li">Consumer alerts</li></a>
+                <a href="https://www.lloyds.com/news-and-risk-insight/media-centre"><li class="gray-li">Media centre</li></a>
+                  <a href="https://futureat.lloyds.com/propsectus"><li class="gray-li">Future at Lloyd's</li></a>
+        </ul>
+        <li class="blue-li">
+          <a href="https://www.lloyds.com/market-directory">Market directory</a>
+          <img class="plus-icon"src="assets/icons/iconmonstr-plus-2-24.png" />
+        </li>
+        <li class="blue-li">
+          <a href="https://www.lloyds.com/market-resources">Market resources</a>
+          <img class="plus-icon"src="assets/icons/iconmonstr-plus-2-24.png" />
+        </li>
+        <li class="blue-li">
+          <a href="https://www.lloyds.com/tools-and-systems">Tools and systems</a>
+          <img class="plus-icon"src="assets/icons/iconmonstr-plus-2-24.png" />
+        </li>
+        <li class="blue-li">
+          <a href="https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a>
+          <img class="plus-icon"src="assets/icons/iconmonstr-plus-2-24.png" />
+        </li>
+        <a class="white-li" href="https://www.lloyds.com/about-lloyds"><li>About</li></a>
+        <a class="white-li" href="https://www.lloyds.com/about-lloyds/value_proposition_broker"><li>Brokers</li></a>
+        <a class="white-li" href="https://www.lloyds.com/about-lloyds/value_proposition_coverholder"><li>Coverholders</li></a>
+        <a class="white-li" href="https://www.lloyds.com/about-lloyds/value_proposition_insurer"><li>Insurer</li></a>
+        <a class="white-li" href="https://www.lloyds.com/policyholder"><li>Policyholders</li></a>
+        <a class="white-li" href="https://www.lloyds.com/careers"><li>Careers</li></a>
+        <a class="white-li" href="https://www.lloyds.com/investor-relations"><li>Investor Relations</li></a>
+        <a class="white-li" href="https://www.lloyds.com/contact-us"><li>Contact</li></a>
+        <a class="white-li" href="https://www.lloyds.com/Account/Login"><li>Login/register</li></a>
         </ul>
     </nav>
 
