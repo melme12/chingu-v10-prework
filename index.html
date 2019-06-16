@@ -13,18 +13,46 @@
 
   <body>
     <nav>
-      
+      <a class ="logo" href="https://www.lloyds.com/">LLOYD'S</a>
+      <ul class="mobile-nav">
+        <li><a href="https://www.lloyds.com/Account/Login"><img class="menu-icon" src="assets/icons/iconmonstr-user-7-48.png" /></a></li>
+        <li><a href="#"><img class="menu-icon" src="assets/icons/iconmonstr-magnifier-6-48.png" /></a></li>
+        <li><a href="#"><img class="menu-icon" src="assets/icons/iconmonstr-menu-1-48.png" /></a></li>
+      </ul>
+
+      <!-- this is hidden on default and will open with click on hamburger menu-->
+      <ul id="main-menu">
+          <li><a href="">News and risk insight</a></li>
+          <li><a href="">Market directory</a></li>
+          <li><a href="">Market resources</a></li>
+          <li><a href="">Tools and systems</a></li>
+          <li><a href="">Lloyd's around the world</a></li>
+          <li><a href="">Aboutd</a></li>
+          <li><a href="">Brokers</a></li>
+          <li><a href="">Coverholders</a></li>
+          <li><a href="">Insurer</a></li>
+          <li><a href="">Policyholders</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Login/register</a></li>
+        </ul>
     </nav>
 
+    <!-- START header -->
     <header>
-      <div class="content-width"> <!--make div as wide as rest of content-->
-        <!--HERE Breadcrumbs-->
+      <div class="content-width">
+        <ul class="breadcrumbs">
+            <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports">Risk Reports</a></li>
+            <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports/library/technology">Technology</a></li>
+          </ul> 
         <h1>Taking control</h1>
         <p>How artificial intelligence and robots create new risks and opportunities for insurance and society</p>
-        <!--HERE Breadcrumbs-->
+        <p><a id="share-box" href="">Share</a></p>
       </div>
-    </header>
+    </header><!-- END header -->
 
+    <!-- START main -->
     <main>
       <div class="content-width">
         <p>As the world becomes increasingly automated, it is forcing underwriters to adapt and navigate a new risk environment. Meanwhile insurers are leveraging the potential of AI themselves to remain competitive, improve processes and increase efficiency. Lloyd’s have commissioned two reports in collaboration with the University of Surrey that explore these trends in more detail.</p>
@@ -40,8 +68,9 @@
           <button>Download</button>
         </div>
       </div>
-    </main>
+    </main><!-- END main -->
     
+    <!-- START footer -->
     <footer>
       <div class="content-width">
         <ul class="footer-nav">
@@ -61,7 +90,7 @@
         <p>Lloyd's Copyright 2019</p>
         <p>Lloyd's is a registered trademark of the Society of Lloyd's. Lloyd's is authorised under the Financial Services and Markets Act 2000.</p>
       </div>
-    </footer>
+    </footer><!-- END footer -->
     
   </body>
 </html>
