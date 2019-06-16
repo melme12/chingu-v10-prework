@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-/* TYPOGRAPHY */
+/* --- TYPOGRAPHY AND STYLE --- */
+
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
@@ -25,7 +26,18 @@ h2 {
   font-weight: 700;
 }
 
-/* COMPONENTS */
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+
+/* --- COMPONENTS --- */
+
 button {
   background-color: #0a4bb7;
   font-size: 16px;
@@ -34,7 +46,13 @@ button {
   border: none;
 }
 
-/* NAVIGATION */
+.social-icon {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+
+/* --- NAVIGATION --- */
 
 /*Footer Nav:*/
 .footer-nav {
@@ -47,13 +65,23 @@ button {
   padding: 5px 0;
 }
 
+.social-nav {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0;
+}
 
-/* LAYOUT */
+.social-li {
+  display: inline;
+  padding-right: 15px;
+}
+
+
+/* --- LAYOUT --- */
 
 html {
   margin: 0;
   padding: 0;
-  
 }
 
 body {
@@ -77,12 +105,25 @@ header {
 }
 
 footer {
+  padding-top: 10px;
   background-color: black;
   color: white;
 }
 
-@media screen and (min-width: 7481px) {
+@media screen and (min-width: 481px) {
   /* Footer Nav changes to p */
+
+  /* --- NAVIGATION --- */
+
+  .footer-li {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .footer-li + .footer-li:before{
+    content: " | ";
+}
+
 }
 
 @media screen and (min-width: 761px) {
