@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-width {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 15px;
+}
+
+@media screen and (min-width: 761px) {
+  /* IMGs are shown */
+}
+
+@media screen and (min-width: 1041px) {
+  /* top menu shows and desktop view is achieved */
+}

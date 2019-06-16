@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
-* {
-  box-sizing: border-box; }
-
-/* --- TYPOGRAPHY AND STYLE --- */
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
@@ -55,7 +51,19 @@ h2 {
 .footer-link:hover {
   text-decoration: underline; }
 
-/* --- COMPONENTS --- */
+#sub-menu-1 a {
+  color: black;
+  text-decoration: none; }
+
+.blue-li a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none; }
+
+.white-li {
+  color: black;
+  text-decoration: none; }
+
 button {
   background-color: #0a4bb7;
   font-size: 16px;
@@ -80,7 +88,46 @@ button {
   height: 25px;
   background-color: white; }
 
-/* --- NAVIGATION --- */
+* {
+  box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.content-width {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 15px; }
+
+@media screen and (min-width: 761px) {
+  /* IMGs are shown */ }
+@media screen and (min-width: 1041px) {
+  /* top menu shows and desktop view is achieved */ }
+header {
+  background-color: #f1f1f1; }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.breadcrumbs li {
+  display: inline; }
+
+.breadcrumbs li + li:before {
+  padding: 8px;
+  color: gray;
+  content: ">"; }
+
+.download-box {
+  padding: 20px 0; }
+
 .mobile-nav-box {
   display: flex;
   flex-direction: row;
@@ -90,7 +137,14 @@ button {
   max-width: 980px;
   padding: 0 15px 25px 15px; }
 
-/* Main Navigation */
+.mobile-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .mobile-nav li {
+    display: inline;
+    padding-left: 10px; }
+
 #main-menu {
   margin: 0;
   padding: 0;
@@ -115,28 +169,17 @@ button {
   background-color: #282f54;
   border-bottom: 1px solid white; }
 
-.blue-li a {
-  color: white;
-  font-weight: 700;
-  text-decoration: none; }
-
 .gray-li {
   display: block;
-  padding: 15px 15px 15px 20px;
+  padding: 10px 10px 10px 20px;
   background-color: #dfe0e6;
   border-bottom: 1px solid white; }
-
-.gray-li::before {
-  /* padding: 8px; */
-  content: url("assets/icons/iconmonstr-angel-right-thin-16.png");
-  font-size: 22px;
-  padding-right: 5px;
-  display: inline-block;
-  vertical-align: sub; }
-
-.gray-li a {
-  color: black;
-  text-decoration: none; }
+  .gray-li::before {
+    content: url("assets/icons/iconmonstr-angel-right-thin-16.png");
+    font-size: 22px;
+    padding-right: 5px;
+    display: inline-block;
+    vertical-align: sub; }
 
 .white-li {
   display: block;
@@ -144,34 +187,20 @@ button {
   background-color: white;
   border-bottom: 1px solid #e6e6e6; }
 
-.white-li a {
-  color: black;
-  text-decoration: none; }
+@media screen and (min-width: 1041px) {
+  /* top menu shows and desktop view is achieved */ }
+footer {
+  padding-top: 10px;
+  background-color: black;
+  color: white; }
 
-/* Login, Search and Hamburger */
-.mobile-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+@media screen and (min-width: 481px) {
+  .footer-li {
+    display: inline;
+    vertical-align: middle; }
 
-.mobile-nav li {
-  display: inline;
-  padding-left: 10px; }
-
-/* Breadcrumbs */
-.breadcrumbs {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-
-.breadcrumbs li {
-  display: inline; }
-
-.breadcrumbs li + li:before {
-  padding: 8px;
-  color: gray;
-  content: ">"; }
-
+  .footer-li + .footer-li:before {
+    content: " | "; } }
 /* Footer Navigation */
 .footer-nav {
   list-style: none;
@@ -190,42 +219,5 @@ button {
 .social-li {
   display: inline;
   padding-right: 15px; }
-
-/* --- LAYOUT --- */
-html {
-  margin: 0;
-  padding: 0; }
-
-body {
-  margin: 0;
-  padding: 0; }
-
-header {
-  background-color: #f1f1f1; }
-
-.content-width {
-  margin: 0 auto;
-  max-width: 980px;
-  padding: 15px; }
-
-.download-box {
-  padding: 20px 0; }
-
-footer {
-  padding-top: 10px;
-  background-color: black;
-  color: white; }
-
-@media screen and (min-width: 481px) {
-  .footer-li {
-    display: inline;
-    vertical-align: middle; }
-
-  .footer-li + .footer-li:before {
-    content: " | "; } }
-@media screen and (min-width: 761px) {
-  /* IMGs are shown */ }
-@media screen and (min-width: 10411px) {
-  /* top menu shows and desktop view is achieved */ }
 
 /*# sourceMappingURL=style.css.map */
