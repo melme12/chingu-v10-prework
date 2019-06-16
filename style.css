@@ -113,14 +113,20 @@ button {
 
 /* Main Navigation */
 #main-menu {
-  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#sub-menu-1 {
+.show {
   display: none;
+}
+
+.show1 {
+  display: none;
+}
+
+#sub-menu-1 {
   margin: 0;
   padding: 0;
   list-style: none;
