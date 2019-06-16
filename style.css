@@ -87,6 +87,12 @@ button {
   cursor: pointer;
 }
 
+.plus-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
 .social-icon {
   width: 25px;
   height: 25px;
@@ -106,7 +112,14 @@ button {
 }
 
 /* Main Navigation */
-#main-menu, #main-menu > ul {
+#main-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sub-menu-1 {
   display: none;
   margin: 0;
   padding: 0;
@@ -114,7 +127,9 @@ button {
 }
 
 .blue-li {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 15px;
   background-color: #282f54;
   border-bottom: 1px solid white;
