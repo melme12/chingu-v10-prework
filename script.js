@@ -5,17 +5,23 @@ function showHam () {
 
 function showSub1() {
   var y = document.querySelector('#sub-menu-1');
-  var toggleBtn = document.querySelector('#sub-menu-toggle-1');
-  
   y.classList.toggle('show1');
-  
-  var showState = "assets/icons/iconmonstr-plus-2-24.png";
-  
-  if ( showState == "assets/icons/iconmonstr-plus-2-24.png" ) {
-    document.images["showSub1img"].src = "assets/icons/iconmonstr-plus-2-24.png";
-    showState  = "earth.jpg";
-  } else {
-    document.images["showSub1img"].src = "assets/icons/iconmonstr-x-mark-2-24.png";
-    showState  = "assets/icons/iconmonstr-plus-2-24.png";
-  }
 }
+
+
+var image_tracker = 'plus';
+
+function change(){
+  var image = document.getElementById('showSub1img');
+  if (image_tracker == 'plus'){
+    image.src = 'assets/icons/iconmonstr-x-mark-2-24.png';
+    image_tracker = 'cross';
+    document.getElementById('blue-grey-li').style.background = "#dfe0e6";
+    document.getElementById('blue-li-a').style.color = "#282f54";
+    } else {
+      image.src = 'assets/icons/iconmonstr-plus-2-24.png';
+      image_tracker = 'plus';
+      document.getElementById('blue-grey-li').style.background = "#282f54";
+     document.getElementById('blue-li-a').style.color = "#ffffff";
+    }
+  }
