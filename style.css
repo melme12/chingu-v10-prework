@@ -83,6 +83,10 @@ button {
   height: 25px;
 }
 
+.menu-icon:hover {
+  cursor: pointer;
+}
+
 .social-icon {
   width: 25px;
   height: 25px;
@@ -91,7 +95,7 @@ button {
 
 /* --- NAVIGATION --- */
 
-nav {
+.mobile-nav-box {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,15 +106,57 @@ nav {
 }
 
 /* Main Navigation */
-#main-menu {
-  display: inline-block;
+#main-menu, #main-menu > ul {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-#main-menu li {
+.blue-li {
+  display: block;
   padding: 15px;
+  background-color: #282f54;
+  border-bottom: 1px solid white;
+}
+
+.blue-li a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.gray-li {
+  display: block;
+  padding: 15px 15px 15px 20px;
+  background-color: #dfe0e6;
+  border-bottom: 1px solid white;
+}
+
+.gray-li::before {
+  /* padding: 8px; */
+  content: url("assets/icons/iconmonstr-angel-right-thin-16.png");
+  font-size: 22px;
+  padding-right: 5px;
+  display: inline-block;
+  vertical-align: sub;
+}
+
+.gray-li a {
+  color: black;
+  text-decoration: none;
+}
+
+.white-li {
+  display: block;
+  padding: 15px;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.white-li a {
+  color: black;
+  text-decoration: none;
 }
 
 /* Login, Search and Hamburger */
