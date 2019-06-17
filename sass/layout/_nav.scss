@@ -83,21 +83,23 @@
   /* top menu shows and desktop view is achieved */
   .toggle-on-mobile {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 980px;
-    padding: 0 15px 15px 15px;
   }
   
   .toggle-on-desktop {
     display: none;
   }
 
+  .first-nav-row {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 980px;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+  }
+
   #top-desktop-nav {
-    //margin: 0 0 0 20px;
+    margin: 0 0 0 20px;
     padding: 0;
-    padding-top: 10px;
     border-bottom: 1px solid lightgrey;
     list-style: none;
   }
@@ -105,8 +107,6 @@
   .top-nav-li {
     display: inline;
     vertical-align: middle;
-    //padding: 5px;
-    
   }
 
   .top-nav-li + .top-nav-li:before{
@@ -116,16 +116,68 @@
   }
 
   input {
-    //width: 100px;
+    width: 140px;
+    padding-left: 20px;
+    height: 41px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #f1f1f1;
+    color: grey;
+    background-image: url('assets/icons/iconmonstr-magnifier-6-48.png');
+    background-size: 20px;
+    background-position: 110px 10px;
+    background-repeat: no-repeat;
   }
 
   .input-li {
     display: inline;
     vertical-align: middle;
+    padding-left: 20px;
+  
   }
 
-  #2nd-desktop-nav {
+  .second-nav-row {
+    margin: 0 auto;
+    max-width: 980px;
+    justify-content: center;
+  }
 
+  #second-desktop-nav {
+    
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    //border-bottom: 1px solid lightgrey;
+    
+    li {
+      border-top: 1px solid #282f54;
+      border-right: 1px solid white;
+      border-left: none;
+      padding: 10px 0;
+      width: calc(975px / 5);
+      text-align: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .active-li {
+      background-color: #dfe0e6;
+      color: #282f54;
+    }
+
+    .inactive-li {
+      background-color: #282f54;
+      color: white;
+    }
+
+    .last-border {
+      border-right: 1px solid #282f54;
+    }
   }
 
 }
