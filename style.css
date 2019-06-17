@@ -29,20 +29,10 @@ h2 {
   color: gray;
   text-decoration: none; }
 
-#share-box {
+#share-link {
   color: #0c4ab5;
   font-weight: 700;
-  text-decoration: none;
-  display: inline-block;
-  padding-left: 10px;
-  padding-top: 15px; }
-
-#share-box::before {
-  content: url("assets/icons/iconmonstr-share-1-16.png");
-  width: 20px;
-  height: 20px;
-  padding-right: 10px;
-  vertical-align: middle; }
+  text-decoration: none; }
 
 .footer-link {
   color: white;
@@ -123,6 +113,33 @@ header {
   padding: 8px;
   color: gray;
   content: ">"; }
+
+#share-box p {
+  margin: 0; }
+
+#share-link {
+  display: inline-block;
+  padding: 15px 0 12px 10px;
+  background-color: black;
+  width: 160px; }
+  #share-link::before {
+    content: url("assets/icons/iconmonstr-share-1-16.png");
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    vertical-align: middle; }
+
+/* Social Navigation */
+.header-social-nav {
+  list-style: none;
+  margin: 15px 0;
+  padding: 10px 0 15px 15px;
+  background-color: black;
+  display: inline-block;
+  margin: 0; }
+  .header-social-nav li {
+    padding-right: 15px;
+    display: inline-block; }
 
 .download-box {
   padding: 20px 0; }
@@ -214,9 +231,8 @@ footer {
   list-style: none;
   margin: 15px 0;
   padding: 0; }
-
-.social-li {
-  display: inline;
-  padding-right: 15px; }
+  .social-nav li {
+    display: inline;
+    padding-right: 15px; }
 
 /*# sourceMappingURL=style.css.map */

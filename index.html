@@ -12,24 +12,22 @@
   </head>
 
   <body>
-    <nav class="mobile-nav-box">
+    <nav class="mobile-nav-box"><!-- START top nav -->
       <a class ="logo" href="https://www.lloyds.com/">LLOYD'S</a>
       <ul class="mobile-nav">
         <li><a href="https://www.lloyds.com/Account/Login"><img class="menu-icon" src="assets/icons/iconmonstr-user-7-48.png" /></a></li>
         <li><a href="#"><img class="menu-icon" src="assets/icons/iconmonstr-magnifier-6-48.png" /></a></li>
         <li><img class="menu-icon" onclick="showHam()" src="assets/icons/iconmonstr-menu-1-48.png" /></li>
       </ul>
-    </nav>
+    </nav><!-- END top nav -->
 
     <!-- this is hidden on default and will open with click on hamburger menu-->
-    <nav>
+    <nav><!-- START nav -->
       <ul id="main-menu" class="show">
-        
         <li class="blue-li" id="blue-grey-li">
           <a id="blue-li-a" href="https://www.lloyds.com/news-and-risk-insight">News and risk insight</a>
           <img class="plus-icon" id="showSub1img" onclick="showSub1();change();" src="assets/icons/iconmonstr-plus-2-24.png" />
         </li>
-
         <ul id="sub-menu-1" class="show1">
             <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li class="gray-li">Press releases</li></a>
             <a href="https://www.lloyds.com/news-and-risk-insight/news"><li class="gray-li">News</li></a>
@@ -68,18 +66,26 @@
         <a class="white-li" href="https://www.lloyds.com/contact-us"><li>Contact</li></a>
         <a class="white-li" href="https://www.lloyds.com/Account/Login"><li>Login/register</li></a>
         </ul>
-    </nav>
+    </nav><!-- END nav -->
 
     <!-- START header -->
     <header>
       <div class="content-width">
         <ul class="breadcrumbs">
-            <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports">Risk Reports</a></li>
-            <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports/library/technology">Technology</a></li>
-          </ul> 
+          <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports">Risk Reports</a></li>
+          <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports/library/technology">Technology</a></li>
+        </ul> 
         <h1>Taking control</h1>
         <p>How artificial intelligence and robots create new risks and opportunities for insurance and society</p>
-        <p><a id="share-box" href="">Share</a></p>
+        <div id="share-box">
+          <p><a id="share-link" href="">Share</a></p>
+          <ul class="header-social-nav">
+            <li><a href="https://twitter.com/LloydsofLondon"><img class="social-icon" src="assets/icons/iconmonstr-twitter-2-48.png" /></a></li>
+            <li><a href="http://www.linkedin.com/company/lloyd%27s-of-london"><img class="social-icon" src="assets/icons/iconmonstr-linkedin-2-48.png" /></a></li>
+            <li><a href="https://www.facebook.com/lloyds"><img class="social-icon" src="assets/icons/iconmonstr-facebook-2-48.png" /></a></li>
+            <li><a href="http://www.youtube.com/user/Lloydsinsurance"><img class="social-icon" src="assets/icons/iconmonstr-youtube-2-48.png" /></a></li>
+          </ul>
+        </div>
       </div>
     </header><!-- END header -->
 
@@ -113,10 +119,10 @@
           <li class="footer-li"><a class="footer-link" href="https://www.lloyds.com/contact-us">Contact</a></li>
         </ul>
         <ul class="social-nav">
-          <li class="social-li"><a href="https://twitter.com/LloydsofLondon"><img class="social-icon" src="assets/icons/iconmonstr-twitter-2-48.png" /></a></li>
-          <li class="social-li"><a href="http://www.linkedin.com/company/lloyd%27s-of-london"><img class="social-icon" src="assets/icons/iconmonstr-linkedin-2-48.png" /></a></li>
-          <li class="social-li"><a href="https://www.facebook.com/lloyds"><img class="social-icon" src="assets/icons/iconmonstr-facebook-2-48.png" /></a></li>
-          <li class="social-li"><a href="http://www.youtube.com/user/Lloydsinsurance"><img class="social-icon" src="assets/icons/iconmonstr-youtube-2-48.png" /></a></li>
+          <li><a href="https://twitter.com/LloydsofLondon"><img class="social-icon" src="assets/icons/iconmonstr-twitter-2-48.png" /></a></li>
+          <li><a href="http://www.linkedin.com/company/lloyd%27s-of-london"><img class="social-icon" src="assets/icons/iconmonstr-linkedin-2-48.png" /></a></li>
+          <li><a href="https://www.facebook.com/lloyds"><img class="social-icon" src="assets/icons/iconmonstr-facebook-2-48.png" /></a></li>
+          <li><a href="http://www.youtube.com/user/Lloydsinsurance"><img class="social-icon" src="assets/icons/iconmonstr-youtube-2-48.png" /></a></li>
         </ul>
         <p>Lloyd's Copyright 2019</p>
         <p>Lloyd's is a registered trademark of the Society of Lloyd's. Lloyd's is authorised under the Financial Services and Markets Act 2000.</p>

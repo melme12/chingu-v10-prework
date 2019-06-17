@@ -33,21 +33,10 @@ h2 {
   text-decoration: none;
 }
 
-#share-box {
+#share-link {
   color: #0c4ab5;
   font-weight: 700;
   text-decoration: none;
-  display: inline-block;
-  padding-left: 10px;
-  padding-top: 15px;
-}
-
-#share-box::before {
-  content:url("assets/icons/iconmonstr-share-1-16.png");
-  width: 20px;
-  height: 20px;
-  padding-right: 10px;
-  vertical-align: middle;
 }
 
 .footer-link {

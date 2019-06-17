@@ -18,3 +18,41 @@ header {
   color: gray;
   content: ">";
 }
+
+//Share Box unter title
+#share-box {
+  p {
+    margin: 0;
+  }
+}
+
+#share-link {
+  display: inline-block;
+  padding: 15px 0 12px 10px; //make this onclick
+  background-color: black; //make this onclick
+  width: 160px;
+
+  &::before {
+    content:url("assets/icons/iconmonstr-share-1-16.png");
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    vertical-align: middle;
+  }
+}
+
+/* Social Navigation */
+.header-social-nav {
+  list-style: none;
+  margin: 15px 0;
+  padding: 10px 0 15px 15px;
+  background-color: black; //make this onclick
+  display: inline-block;
+  margin: 0;
+
+  li {
+    padding-right: 15px;
+    display: inline-block;
+
+  }
+}
