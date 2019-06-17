@@ -26,6 +26,7 @@ h2 {
   font-family: 'Times New Roman', Times, serif;
   vertical-align: middle;
   padding: 10px;
+  height: 41px;
 }
 
 .breadcrumbs li a {
@@ -72,5 +73,19 @@ h2 {
 @media screen and (min-width: 1041px) {
   h2 {
     margin-top: 0;
+  }
+
+  #top-desktop-nav {
+    font-size: 12px;
+    text-decoration: none;
+
+    a {
+      color: #111111;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

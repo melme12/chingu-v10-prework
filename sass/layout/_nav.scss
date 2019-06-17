@@ -1,3 +1,7 @@
+.toggle-on-mobile {
+  display: none;
+}
+
 // Wrapper for logo and top nav
 .mobile-nav-box {
   display: flex;
@@ -77,4 +81,51 @@
 
 @media screen and (min-width: 1041px) {
   /* top menu shows and desktop view is achieved */
+  .toggle-on-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 15px 15px 15px;
+  }
+  
+  .toggle-on-desktop {
+    display: none;
+  }
+
+  #top-desktop-nav {
+    //margin: 0 0 0 20px;
+    padding: 0;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgrey;
+    list-style: none;
+  }
+  
+  .top-nav-li {
+    display: inline;
+    vertical-align: middle;
+    //padding: 5px;
+    
+  }
+
+  .top-nav-li + .top-nav-li:before{
+    font-size: 14px;
+    color: lightgrey;
+    content: " | ";
+  }
+
+  input {
+    //width: 100px;
+  }
+
+  .input-li {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  #2nd-desktop-nav {
+
+  }
+
 }
