@@ -200,18 +200,16 @@
     }
   }
 
-  #hover-nav {
-    margin: 0 auto;
-    max-width: 980px;
-  }
-
   #desk-first-nav-sub {
-    //display: none;
-    //position: absolute;
+    display: none;
+    position: absolute;
     background-color: #f1f1f1;
     color: black;
     padding: 5px 20px;
     box-shadow: 0 0 8px black;
+    width: 980px;
+    margin: auto;
+    left: 21.35%;
 
     p {
       padding-bottom: 10px;
