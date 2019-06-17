@@ -27,29 +27,24 @@ function change() {
     }
   }
 
-  // Show Share box
-  function showShareIcons() {  
-    var a = document.querySelector('#header-social-nav');
-    a.classList.toggle('showShareItems');
-    document.getElementById('share-link').style.background = "black";
-    document.getElementById('share-link').style.color = "white";
+// Show Share box
+function showShareIcons() {  
+  var a = document.querySelector('#header-social-nav');
+  a.classList.toggle('showShareItems');
+  document.getElementById('share-link').style.background = "black";
+  document.getElementById('share-link').style.color = "white";
 }
 
 // Style Share box
+var color_tracker = '#f1f1f1';
 function styleBlackSocialBox() {
-  if (document.getElementById('header-social-nav').style.display == "block") {
-    document.getElementById('header-social-nav').style.display = "inline-block";
+  if (color_tracker == '#f1f1f1') {
     document.getElementById('share-link').style.background = "black";
+    color_tracker = 'black';
     document.getElementById('share-link').style.color = "white";
-  } else {
-    document.getElementById('share-link').style.background = "#f1f1f1";
-    document.getElementById('share-link').style.color = "#0c4ab5";
-  }
+    } else {
+      document.getElementById('share-link').style.background = "#f1f1f1";
+      color_tracker = '#f1f1f1';
+      document.getElementById('share-link').style.color = "#0c4ab5";
+    }
 }
-
-
-    
-  // } else {
-  //   document.getElementById('header-social-nav').style.display = "none";
-  //   document.getElementById('share-link').style.background = "white";
-  //   document.getElementById('share-link').style.color = "#0c4ab5";

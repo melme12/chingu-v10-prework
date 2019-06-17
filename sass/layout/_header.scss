@@ -30,9 +30,8 @@ header {
 
 #share-link {
   display: inline-block;
-  padding: 15px 0 12px 10px; //make this onclick
-  width: 160px;
-  //background-color: black;
+  padding: 15px 0 12px 10px;
+  width: 150px;
 
   &::before {
     content:url("assets/icons/iconmonstr-share-1-16.png");
@@ -45,19 +44,24 @@ header {
 
 /* Social Navigation */
 #header-social-nav {
-  list-style: none;
-  margin: 15px 0;
   padding: 10px 0 15px 15px;
-  //display: inline-block; collides with display: none; from class, put this in function!
-  margin: 0;
   background-color: black;
-
-  li {
-    padding-right: 15px;
-    display: inline-block;
-  }
+  width: 180px;
 }
 
 .showShareItems {
   display: none;
+}
+
+.header-social-ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  
+  
+  li {
+    padding-right: 15px;
+  }
 }
