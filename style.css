@@ -32,7 +32,7 @@ h2 {
 #share-link {
   color: #0c4ab5;
   font-weight: 700;
-  text-decoration: none; }
+  cursor: pointer; }
 
 .footer-link {
   color: white;
@@ -114,13 +114,14 @@ header {
   color: gray;
   content: ">"; }
 
-#share-box p {
-  margin: 0; }
+#share-box {
+  display: block; }
+  #share-box p {
+    margin: 0; }
 
 #share-link {
   display: inline-block;
   padding: 15px 0 12px 10px;
-  background-color: black;
   width: 160px; }
   #share-link::before {
     content: url("assets/icons/iconmonstr-share-1-16.png");
@@ -130,16 +131,18 @@ header {
     vertical-align: middle; }
 
 /* Social Navigation */
-.header-social-nav {
+#header-social-nav {
   list-style: none;
   margin: 15px 0;
   padding: 10px 0 15px 15px;
-  background-color: black;
-  display: inline-block;
-  margin: 0; }
-  .header-social-nav li {
+  margin: 0;
+  background-color: black; }
+  #header-social-nav li {
     padding-right: 15px;
     display: inline-block; }
+
+.showShareItems {
+  display: none; }
 
 .download-box {
   padding: 20px 0; }

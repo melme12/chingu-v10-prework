@@ -42,7 +42,7 @@
         </ul>
         <li class="blue-li">
           <a href="https://www.lloyds.com/market-directory">Market directory</a>
-          <img class="plus-icon" id="sub-menu-toggle-1" onclick="showSub2()" src="assets/icons/iconmonstr-plus-2-24.png" />
+          <img class="plus-icon" id="sub-menu-toggle-1" src="assets/icons/iconmonstr-plus-2-24.png" />
         </li>
         <li class="blue-li">
           <a href="https://www.lloyds.com/market-resources">Market resources</a>
@@ -77,9 +77,9 @@
         </ul> 
         <h1>Taking control</h1>
         <p>How artificial intelligence and robots create new risks and opportunities for insurance and society</p>
-        <div id="share-box">
-          <p><a id="share-link" href="">Share</a></p>
-          <ul class="header-social-nav">
+        <div id="share-box"> <!-- Toggle Share options-->
+          <p><span id="share-link" onclick="showShareIcons();">Share</span></p>
+          <ul id="header-social-nav" class="showShareItems">
             <li><a href="https://twitter.com/LloydsofLondon"><img class="social-icon" src="assets/icons/iconmonstr-twitter-2-48.png" /></a></li>
             <li><a href="http://www.linkedin.com/company/lloyd%27s-of-london"><img class="social-icon" src="assets/icons/iconmonstr-linkedin-2-48.png" /></a></li>
             <li><a href="https://www.facebook.com/lloyds"><img class="social-icon" src="assets/icons/iconmonstr-facebook-2-48.png" /></a></li>

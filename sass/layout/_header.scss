@@ -21,6 +21,8 @@ header {
 
 //Share Box unter title
 #share-box {
+  display: block;
+  
   p {
     margin: 0;
   }
@@ -29,8 +31,8 @@ header {
 #share-link {
   display: inline-block;
   padding: 15px 0 12px 10px; //make this onclick
-  background-color: black; //make this onclick
   width: 160px;
+  //background-color: black;
 
   &::before {
     content:url("assets/icons/iconmonstr-share-1-16.png");
@@ -42,17 +44,20 @@ header {
 }
 
 /* Social Navigation */
-.header-social-nav {
+#header-social-nav {
   list-style: none;
   margin: 15px 0;
   padding: 10px 0 15px 15px;
-  background-color: black; //make this onclick
-  display: inline-block;
+  //display: inline-block; collides with display: none; from class, put this in function!
   margin: 0;
+  background-color: black;
 
   li {
     padding-right: 15px;
     display: inline-block;
-
   }
+}
+
+.showShareItems {
+  display: none;
 }
