@@ -54,6 +54,9 @@ h2 {
   color: black;
   text-decoration: none; }
 
+@media screen and (min-width: 1041px) {
+  h2 {
+    margin-top: 0; } }
 button {
   background-color: #0a4bb7;
   font-size: 16px;
@@ -149,8 +152,23 @@ header {
     padding-right: 15px; }
 
 .download-box {
-  padding: 20px 0; }
+  padding: 30px 0; }
+  .download-box img {
+    display: none; }
 
+@media screen and (min-width: 1041px) {
+  /* top menu shows and desktop view is achieved */
+  .download-box {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start; }
+    .download-box img {
+      display: block;
+      width: auto;
+      margin-right: 70px; }
+
+  .text-box {
+    width: 70%; } }
 .mobile-nav-box {
   display: flex;
   flex-direction: row;
