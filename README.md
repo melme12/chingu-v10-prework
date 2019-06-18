@@ -1,4 +1,4 @@
-# chingu-v10-prework: Task 2: Solo Project (4-8 Hr)
+# Chingu Voyage 10 Pre-Work: Solo Project (4-8 Hr)
 Solo Project for Chingu Voyage 10: Clone a Landing Page
 
 ___
