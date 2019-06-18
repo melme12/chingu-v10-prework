@@ -1,7 +1,6 @@
 # Chingu Voyage 10 Pre-Work: Solo Project (4-8 Hr)
 Solo Project for Chingu Voyage 10: Clone a Landing Page
 
-___
 ## Directions:
 These projects are a way for you to familiarize yourself with the concepts required for the larger eight week project.
 
