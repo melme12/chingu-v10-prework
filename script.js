@@ -49,3 +49,10 @@ function styleBlackSocialBox() {
     }
 }
 
+function showSub() {
+  document.getElementById("desk-first-nav-sub").style.display = "block";
+}
+
+function hideSub() {
+  document.getElementById("desk-first-nav-sub").style.display = "none";
+}
