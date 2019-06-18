@@ -6,6 +6,10 @@
   }
 }
 
+.download-p {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 1041px) {
   .download-box {
     display: -webkit-box;
@@ -22,10 +26,6 @@
       display: block;
       width: auto;
       margin-right: 70px;
-    }
-
-    .download-p {
-      margin-top: 30px;
     }
   }
 

@@ -18,3 +18,9 @@ body {
   max-width: $content-width;
   padding: 15px;
 }
+
+@media screen and (min-width: 1041px) {
+  .content-width {
+    padding: 15px 0;
+  }
+}
