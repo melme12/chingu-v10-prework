@@ -8,21 +8,24 @@
     <title>Taking control - Lloyd's - The world’s specialist insurance market. Also known as Lloyd's of London; is a market where members join together as syndicates to insure risks.</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
   </head>
 
-  <body>
-    <nav class="mobile-nav-box toggle-on-desktop"><!-- START top nav -->
+  <body">
+
+    <!-------- START navigation -------->
+    
+    <!-- mobile top nav: logo and icons -->
+    <nav class="mobile-nav-box toggle-on-desktop">
       <a class ="logo" href="https://www.lloyds.com/">LLOYD'S</a>
       <ul class="mobile-nav">
         <li><a href="https://www.lloyds.com/Account/Login"><img class="menu-icon" src="assets/icons/iconmonstr-user-7-48.png" /></a></li>
         <li><a href="#"><img class="menu-icon" src="assets/icons/iconmonstr-magnifier-6-48.png" /></a></li>
         <li><img class="menu-icon" onclick="showHam()" src="assets/icons/iconmonstr-menu-1-48.png" /></li>
       </ul>
-    </nav><!-- END top nav -->
+    </nav>
 
-    <!-- this is hidden on default and will open with click on hamburger menu-->
-    <nav class="toggle-on-desktop"><!-- START nav -->
+    <!-- mobile dropdown menu: hidden on default and will open with click on hamburger menu-->
+    <nav class="toggle-on-desktop">
       <ul id="main-menu" class="show">
         <li class="blue-li" id="blue-grey-li">
           <a id="blue-li-a" href="https://www.lloyds.com/news-and-risk-insight">News and risk insight</a>
@@ -68,6 +71,9 @@
         </ul>
     </nav>
     
+    <!-- Desktop Navigation -->
+
+    <!-- desktop logo and light top menu -->
     <nav class="toggle-on-mobile first-nav-row">
       <a class ="logo" href="https://www.lloyds.com/">LLOYD'S</a>
       <ul id="top-desktop-nav">
@@ -83,36 +89,42 @@
         <li class="input-li"><input type="search" placeholder="Search"></li>
       </ul>
     </nav>
+
+    <!-- desktop send navigation row -->
     <nav class="toggle-on-mobile second-nav-row">
         <ul id="second-desktop-nav">
-          <a class="desk-first-nav-a" href="https://www.lloyds.com/news-and-risk-insight"><li class="">News and risk insight</li></a>
+          <a class="desk-first-nav-a" href="https://www.lloyds.com/news-and-risk-insight">
+            <li onmouseover="showSub()" onmouseout="hideSub()">
+              <span>News and risk insight</span></li>
+          </a>
           <a class="desk-other-nav-a" href="#"><li class="">Market directory</li></a>
           <a class="desk-other-nav-a" href="#"><li class="">Market resources</li></a>
           <a class="desk-other-nav-a" href="#"><li class="">Tools and systems</li></a>
           <a class="desk-other-nav-a" href="#"><li class="last-li">Lloyd's around the world</li></a>
         </ul>
     </nav>
-    <nav id="hover-nav">
-      <div id="desk-first-nav-sub">
-          <p>News and risk insight</p>
-          <ul id="" class="">
-              <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li class="">Press releases</li></a>
-              <a href="https://www.lloyds.com/news-and-risk-insight/news"><li class="">News</li></a>
-              <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports"><li class="">Risk reports</li></a>
-              <a href="https://www.lloyds.com/events"><li class="">Events</li></a>
-              <a href="https://www.lloydsbrussels.com/"><li class="">Lloyd’s subsidiary in Brussels</li></a>
-              <a href="https://www.lloydslab.com/"><li class="">Lloyd's Lab</li></a>
-              <a href="https://www.lloyds.com/cityriskindex/"><li class="">City Risk Index</li></a>
-                <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts"><li class="">Consumer alerts</li></a>
-                  <a href="https://www.lloyds.com/news-and-risk-insight/media-centre"><li class="">Media centre</li></a>
-                    <a href="https://futureat.lloyds.com/propsectus"><li class="">Future at Lloyd's</li></a>
-          </ul>
-        </div>
-    </nav>
     
-    <!-- END nav -->
+    <!-- desktop dropdown nav: show when hovered over first .desk-first-nav-a-->
+    <div id="desk-first-nav-sub" onmouseover="showSub()" onmouseout="hideSub()">
+        <p>News and risk insight</p>
+        <ul id="hover-sub-nav">
+          <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li>Press releases</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/news"><li>News</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports"><li>Risk reports</li></a>
+          <a href="https://www.lloyds.com/events"><li>Events</li></a>
+          <a href="https://www.lloydsbrussels.com/"><li>Lloyd’s subsidiary in Brussels</li></a>
+          <a href="https://www.lloydslab.com/"><li>Lloyd's Lab</li></a>
+          <a href="https://www.lloyds.com/cityriskindex/"><li>City Risk Index</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts"><li>Consumer alerts</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/media-centre"><li>Media centre</li></a>
+          <a href="https://futureat.lloyds.com/propsectus"><li>Future at Lloyd's</li></a>
+        </ul>
+      </div>
+      
+    
+    <!-------- END navigation -------->
 
-    <!-- START header -->
+    <!--------- START header --------->
     <header>
       <div class="content-width">
         <ul class="breadcrumbs">
@@ -184,5 +196,6 @@
       </div>
     </footer><!-- END footer -->
     
-  </body>
+    <script src="script.js"></script>
+  </body">
 </html>

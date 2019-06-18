@@ -48,3 +48,11 @@ function styleBlackSocialBox() {
       document.getElementById('share-link').style.color = "#0c4ab5";
     }
 }
+
+function showSub() {
+  document.getElementById("desk-first-nav-sub").style.display = "block";
+}
+
+function hideSub() {
+  document.getElementById("desk-first-nav-sub").style.display = "none";
+}
