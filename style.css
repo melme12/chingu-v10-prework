@@ -63,7 +63,10 @@ h2 {
 
 @media screen and (min-width: 481px) {
   h1 {
-    font-size: 47px; } }
+    font-size: 47px; }
+
+  .subtitle {
+    width: 70%; } }
 @media screen and (min-width: 1041px) {
   h2 {
     margin-top: 0; }
