@@ -8,9 +8,15 @@
 
 @media screen and (min-width: 1041px) {
   .download-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-content: flex-start;
+       -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: start;
+         align-content: flex-start;
 
     img {
       display: block;

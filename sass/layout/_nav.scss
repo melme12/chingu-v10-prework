@@ -4,9 +4,18 @@
 
 // Wrapper for logo and top nav
 .mobile-nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
   max-width: $content-width;
@@ -48,9 +57,15 @@
 
 // 2. Level Navigation with blue bg
 .blue-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+   justify-content: space-between;
   padding: 15px;
   background-color: $darkblue;
   border-bottom: 1px solid white;
@@ -82,6 +97,8 @@
 @media screen and (min-width: 1041px) {
   /* top menu shows and desktop view is achieved */
   .toggle-on-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   
@@ -90,10 +107,15 @@
   }
 
   .first-nav-row {
-    flex-direction: row;
+       -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
     margin: 0 auto;
     max-width: $content-width;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+     justify-content: space-between;
     padding: 0 0 20px 0;
   }
 
@@ -138,7 +160,9 @@
   .second-nav-row {
     margin: 0 auto;
     max-width: $content-width;
-    justify-content: center;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+     justify-content: center;
   }
 
   #second-desktop-nav {
@@ -146,8 +170,14 @@
     border-left: 1px transparent;
     border-right: 1px transparent;
     border-bottom: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+       -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+      -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 0;
     padding: 0;
@@ -206,14 +236,17 @@
     background-color: $lightgrey;
     color: black;
     padding: 20px 25px;
-    box-shadow: 0 0 10px #414141;
+    -webkit-box-shadow: 0 0 10px #414141;
+            box-shadow: 0 0 10px #414141;
     width: $content-width;
     height: 250px;
     margin: 0 auto;
     top: 102px;
     //Center absolute item:
     left: 50%;
-    transform:translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform:translateX(-50%);
 
     p {
       font-size: 14px;
@@ -225,10 +258,18 @@
   }
 
   #hover-sub-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+       -ms-flex-pack: left;
+     justify-content: left;
+       -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -237,5 +278,4 @@
       padding: 10px 0;
     }
   }
-
-}/* End Media Query */
+}
