@@ -30,6 +30,9 @@ h2 {
   color: gray;
   text-decoration: none; }
 
+.subtitle {
+  font-size: 13px; }
+
 #share-link {
   color: #0c4ab5;
   font-weight: 700;
@@ -67,9 +70,18 @@ h2 {
       color: #111111;
       text-decoration: none; }
       #top-desktop-nav a:hover {
-        text-decoration: underline; } }
-button {
-  background-color: #0a4bb7;
+        text-decoration: underline; }
+
+  #hover-sub-nav a {
+    text-decoration: none;
+    color: black;
+    width: 310px; }
+    #hover-sub-nav a:hover {
+      text-decoration: underline; } }
+.download {
+  display: inline;
+  background-color: #0c4ab5;
+  text-decoration: none;
   font-size: 16px;
   color: white;
   padding: 20px 15px;
@@ -108,12 +120,9 @@ body {
   max-width: 980px;
   padding: 15px; }
 
-@media screen and (min-width: 761px) {
-  /* IMGs are shown */ }
-@media screen and (min-width: 1041px) {
-  /* top menu shows and desktop view is achieved */ }
 header {
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  padding-top: 15px; }
 
 /* Breadcrumbs */
 .breadcrumbs {
@@ -176,6 +185,8 @@ header {
       display: block;
       width: auto;
       margin-right: 70px; }
+    .download-box .download-p {
+      margin-top: 30px; }
 
   .text-box {
     width: 70%; } }
@@ -296,8 +307,8 @@ header {
 
   #second-desktop-nav {
     border-top: 1px solid #282f54;
-    border-left: 1px solid #dfe0e6;
-    border-right: 1px solid #282f54;
+    border-left: 1px transparent;
+    border-right: 1px transparent;
     border-bottom: none;
     display: flex;
     flex-direction: row;
@@ -365,12 +376,6 @@ header {
     list-style: none;
     margin: 0;
     padding: 0; }
-    #hover-sub-nav a {
-      text-decoration: none;
-      color: black;
-      width: 310px; }
-      #hover-sub-nav a:hover {
-        text-decoration: underline; }
     #hover-sub-nav li {
       padding: 10px 0; } }
 /* End Media Query */

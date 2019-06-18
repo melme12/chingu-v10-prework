@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <body">
+  <body>
 
-    <!-------- START navigation -------->
+    <!-- __________ START navigation __________ -->
     
     <!-- mobile top nav: logo and icons -->
     <nav class="mobile-nav-box toggle-on-desktop">
@@ -32,16 +32,16 @@
           <img class="plus-icon" id="showSub1img" onclick="showSub1();change();" src="assets/icons/iconmonstr-plus-2-24.png" />
         </li>
         <ul id="sub-menu-1" class="show1">
-            <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li class="gray-li">Press releases</li></a>
-            <a href="https://www.lloyds.com/news-and-risk-insight/news"><li class="gray-li">News</li></a>
-            <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports"><li class="gray-li">Risk reports</li></a>
-            <a href="https://www.lloyds.com/events"><li class="gray-li">Events</li></a>
-            <a href="https://www.lloydsbrussels.com/"><li class="gray-li">Lloyd’s subsidiary in Brussels</li></a>
-            <a href="https://www.lloydslab.com/"><li class="gray-li">Lloyd's Lab</li></a>
-            <a href="https://www.lloyds.com/cityriskindex/"><li class="gray-li">City Risk Index</li></a>
-              <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts"><li class="gray-li">Consumer alerts</li></a>
-                <a href="https://www.lloyds.com/news-and-risk-insight/media-centre"><li class="gray-li">Media centre</li></a>
-                  <a href="https://futureat.lloyds.com/propsectus"><li class="gray-li">Future at Lloyd's</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li class="gray-li">Press releases</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/news"><li class="gray-li">News</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports"><li class="gray-li">Risk reports</li></a>
+          <a href="https://www.lloyds.com/events"><li class="gray-li">Events</li></a>
+          <a href="https://www.lloydsbrussels.com/"><li class="gray-li">Lloyd’s subsidiary in Brussels</li></a>
+          <a href="https://www.lloydslab.com/"><li class="gray-li">Lloyd's Lab</li></a>
+          <a href="https://www.lloyds.com/cityriskindex/"><li class="gray-li">City Risk Index</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts"><li class="gray-li">Consumer alerts</li></a>
+          <a href="https://www.lloyds.com/news-and-risk-insight/media-centre"><li class="gray-li">Media centre</li></a>
+          <a href="https://futureat.lloyds.com/propsectus"><li class="gray-li">Future at Lloyd's</li></a>
         </ul>
         <li class="blue-li">
           <a href="https://www.lloyds.com/market-directory">Market directory</a>
@@ -49,15 +49,15 @@
         </li>
         <li class="blue-li">
           <a href="https://www.lloyds.com/market-resources">Market resources</a>
-          <img class="plus-icon"src="assets/icons/iconmonstr-plus-2-24.png" />
+          <img class="plus-icon" src="assets/icons/iconmonstr-plus-2-24.png" />
         </li>
         <li class="blue-li">
           <a href="https://www.lloyds.com/tools-and-systems">Tools and systems</a>
-          <img class="plus-icon"src="assets/icons/iconmonstr-plus-2-24.png" />
+          <img class="plus-icon" src="assets/icons/iconmonstr-plus-2-24.png" />
         </li>
         <li class="blue-li">
           <a href="https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a>
-          <img class="plus-icon"src="assets/icons/iconmonstr-plus-2-24.png" />
+          <img class="plus-icon" src="assets/icons/iconmonstr-plus-2-24.png" />
         </li>
         <a class="white-li" href="https://www.lloyds.com/about-lloyds"><li>About</li></a>
         <a class="white-li" href="https://www.lloyds.com/about-lloyds/value_proposition_broker"><li>Brokers</li></a>
@@ -92,39 +92,37 @@
 
     <!-- desktop send navigation row -->
     <nav class="toggle-on-mobile second-nav-row">
-        <ul id="second-desktop-nav">
-          <a class="desk-first-nav-a" href="https://www.lloyds.com/news-and-risk-insight">
-            <li onmouseover="showSub()" onmouseout="hideSub()">
-              <span>News and risk insight</span></li>
-          </a>
-          <a class="desk-other-nav-a" href="#"><li class="">Market directory</li></a>
-          <a class="desk-other-nav-a" href="#"><li class="">Market resources</li></a>
-          <a class="desk-other-nav-a" href="#"><li class="">Tools and systems</li></a>
-          <a class="desk-other-nav-a" href="#"><li class="last-li">Lloyd's around the world</li></a>
-        </ul>
+      <ul id="second-desktop-nav">
+        <a class="desk-first-nav-a" href="https://www.lloyds.com/news-and-risk-insight">
+          <li onmouseover="showSub()" onmouseout="hideSub()"><span>News and risk insight</span></li>
+        </a>
+        <a class="desk-other-nav-a" href="#"><li class="">Market directory</li></a>
+        <a class="desk-other-nav-a" href="#"><li class="">Market resources</li></a>
+        <a class="desk-other-nav-a" href="#"><li class="">Tools and systems</li></a>
+        <a class="desk-other-nav-a" href="#"><li class="last-li">Lloyd's around the world</li></a>
+      </ul>
     </nav>
     
     <!-- desktop dropdown nav: show when hovered over first .desk-first-nav-a-->
     <div id="desk-first-nav-sub" onmouseover="showSub()" onmouseout="hideSub()">
-        <p>News and risk insight</p>
-        <ul id="hover-sub-nav">
-          <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li>Press releases</li></a>
-          <a href="https://www.lloyds.com/news-and-risk-insight/news"><li>News</li></a>
-          <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports"><li>Risk reports</li></a>
-          <a href="https://www.lloyds.com/events"><li>Events</li></a>
-          <a href="https://www.lloydsbrussels.com/"><li>Lloyd’s subsidiary in Brussels</li></a>
-          <a href="https://www.lloydslab.com/"><li>Lloyd's Lab</li></a>
-          <a href="https://www.lloyds.com/cityriskindex/"><li>City Risk Index</li></a>
-          <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts"><li>Consumer alerts</li></a>
-          <a href="https://www.lloyds.com/news-and-risk-insight/media-centre"><li>Media centre</li></a>
-          <a href="https://futureat.lloyds.com/propsectus"><li>Future at Lloyd's</li></a>
-        </ul>
-      </div>
-      
-    
-    <!-------- END navigation -------->
+      <p>News and risk insight</p>
+      <ul id="hover-sub-nav">
+        <a href="https://www.lloyds.com/news-and-risk-insight/press-releases"><li>Press releases</li></a>
+        <a href="https://www.lloyds.com/news-and-risk-insight/news"><li>News</li></a>
+        <a href="https://www.lloyds.com/news-and-risk-insight/risk-reports"><li>Risk reports</li></a>
+        <a href="https://www.lloyds.com/events"><li>Events</li></a>
+        <a href="https://www.lloydsbrussels.com/"><li>Lloyd’s subsidiary in Brussels</li></a>
+        <a href="https://www.lloydslab.com/"><li>Lloyd's Lab</li></a>
+        <a href="https://www.lloyds.com/cityriskindex/"><li>City Risk Index</li></a>
+        <a href="https://www.lloyds.com/news-and-risk-insight/consumer-alerts"><li>Consumer alerts</li></a>
+        <a href="https://www.lloyds.com/news-and-risk-insight/media-centre"><li>Media centre</li></a>
+        <a href="https://futureat.lloyds.com/propsectus"><li>Future at Lloyd's</li></a>
+      </ul>
+    </div>
 
-    <!--------- START header --------->
+    <!-- __________ END navigation __________ -->
+
+    <!-- __________ START header __________ -->
     <header>
       <div class="content-width">
         <ul class="breadcrumbs">
@@ -132,7 +130,7 @@
           <li><a href="https://www.lloyds.com/news-and-risk-insight/risk-reports/library/technology">Technology</a></li>
         </ul> 
         <h1>Taking control</h1>
-        <p>How artificial intelligence and robots create new risks and opportunities for insurance and society</p>
+        <p class="subtitle">How artificial intelligence and robots create new risks and opportunities for insurance and society</p>
         <div id="share-box"> <!-- Toggle Share options-->
           <p><span id="share-link" onclick="showShareIcons();styleBlackSocialBox();">Share</span></p>
           <div id="header-social-nav" class="showShareItems">
@@ -143,38 +141,39 @@
               <li><a href="mailto:?subject=Taking-control&body=https%3a%2f%2fwww.lloyds.com%3a443%2fnews-and-risk-insight%2frisk-reports%2flibrary%2ftechnology%2ftaking-control"><img class="social-icon" src="assets/icons/emailicon.png" /></a></li>
             </ul>
           </div>
-          
         </div>
       </div>
-    </header><!-- END header -->
+    </header>
+    <!-- __________ END header __________ -->
 
-    <!-- START main -->
+    <!-- __________ START main content __________ -->
     <main>
       <div class="content-width">
         <p>As the world becomes increasingly automated, it is forcing underwriters to adapt and navigate a new risk environment. Meanwhile insurers are leveraging the potential of AI themselves to remain competitive, improve processes and increase efficiency. Lloyd’s have commissioned two reports in collaboration with the University of Surrey that explore these trends in more detail.</p>
         <p>“Taking control: artificial intelligence and insurance” analyses the associated risks of AI implementation as well as the potential for AI to help insurers improve their operations and develop new products. Building on this, “Taking control: robots and risk” investigates the impact “collaborative robots” (or cobots) on the economy, and the subsequent risks implications for the insurance industry.</p>
-
+        <!-- first download box -->
         <div class="download-box">
-          <img src="assets/img/Taking control thumb.png">
+          <img src="assets/img/Taking_control_thumb.png" alt="Taking control: Artificial intelligence and Insurance thumbnail" />
           <div class="text-box">
-              <h2>Taking control: artificial intelligence and insurance</h2>
-              <p stlye="flex-shrink: 1;">This report identifies four risks areas for AI: trust and transparency, ethics, security and safety. It highlights that as artificial intelligence systems become more complex, cyber breaches are likely to have an even greater impact. The report also explores new business opportunities for insurers from developing new products for companies using the AI to applying the technology to improve insurance processes and deliver better value.</p>
-              <button>Download</button>
+            <h2>Taking control: artificial intelligence and insurance</h2>
+            <p stlye="flex-shrink: 1;">This report identifies four risks areas for AI: trust and transparency, ethics, security and safety. It highlights that as artificial intelligence systems become more complex, cyber breaches are likely to have an even greater impact. The report also explores new business opportunities for insurers from developing new products for companies using the AI to applying the technology to improve insurance processes and deliver better value.</p>
+            <p class="download-p"><a href="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/aireport_2019_final_pdf.pdf" class="download">Download</a></p>
           </div>
-          </div>
-        
-
+        </div>
+        <!-- second download box -->
         <div class="download-box">
-          <img src="assets/img/Robots Thumbnail.png">
+          <img src="assets/img/Robots_Thumbnail.png" alt="Taking control: robots and risk thumbnail" />
           <div class="text-box">
             <h2>Taking control: robots and risk</h2>
             <p>In the future millions of jobs could be taken over by increasingly sophisticated robots or cobots (“collaborative robots”), according to various predictions. This report explores robotics potential to significantly change the risk landscape in many parts of the economy, including: manufacturing, agriculture, healthcare and retail. It also explores the opportunity for insurers to collaborate with clients as data from cobots will provide a much greater understanding of risk and offer opportunities for improved risks and pricing models. </p>
-            <button>Download</button>
+            <p class="download-p"><a href="https://www.lloyds.com/~/media/files/news-and-insight/risk-insight/2019/robotics_2019_final_pdf.pdf" class="download">Download</a></p>
           </div>
         </div>
-    </main><!-- END main -->
+      </div>
+    </main>
+    <!-- __________ END main content __________ -->
     
-    <!-- START footer -->
+    <!-- __________ START footer __________ -->
     <footer>
       <div class="content-width">
         <ul class="footer-nav">
@@ -194,8 +193,9 @@
         <p>Lloyd's Copyright 2019</p>
         <p>Lloyd's is a registered trademark of the Society of Lloyd's. Lloyd's is authorised under the Financial Services and Markets Act 2000.</p>
       </div>
-    </footer><!-- END footer -->
+    </footer>
+    <!-- __________ END footer __________ -->
     
     <script src="script.js"></script>
-  </body">
+  </body>
 </html>

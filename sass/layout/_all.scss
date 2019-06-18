@@ -14,14 +14,6 @@ body {
 
 .content-width {
   margin: 0 auto;
-  max-width: 980px;
+  max-width: $content-width;
   padding: 15px;
-}
-
-@media screen and (min-width: 761px) {
-  /* IMGs are shown */
-}
-
-@media screen and (min-width: 1041px) {
-  /* top menu shows and desktop view is achieved */
 }

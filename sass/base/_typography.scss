@@ -34,9 +34,13 @@ h2 {
   text-decoration: none;
 }
 
+.subtitle {
+  font-size: 13px;
+}
+
 //Share Icon and Box
 #share-link {
-  color: #0c4ab5;
+  color: $blue;
   font-weight: 700;
   cursor: pointer;
 }
@@ -89,4 +93,19 @@ h2 {
       }
     }
   }
+
+  #hover-sub-nav {
+    
+    a {
+      text-decoration: none;
+      color: black;
+      width: 310px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
 }
