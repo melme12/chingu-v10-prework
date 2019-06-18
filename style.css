@@ -210,7 +210,9 @@ header {
     .download-box img {
       display: block;
       width: auto;
-      margin-right: 70px; }
+      margin-right: 70px;
+      -webkit-box-shadow: 0 0 7px #6d6d6d;
+      box-shadow: 0 0 7px #6d6d6d; }
 
   .text-box {
     width: 70%; } }
@@ -314,8 +316,8 @@ header {
     padding: 0 0 20px 0; }
 
   #top-desktop-nav {
-    margin: 0 0 0 20px;
-    padding: 0;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
     border-bottom: 1px solid lightgrey;
     list-style: none; }
 
@@ -328,7 +330,7 @@ header {
     color: lightgrey;
     content: " | "; }
 
-  input {
+  .search-field {
     width: 140px;
     padding-left: 20px;
     height: 41px;
@@ -336,10 +338,22 @@ header {
     border-bottom: 1px solid black;
     background-color: #f1f1f1;
     color: grey;
+    z-index: 1; }
+
+  .search-icon {
+    position: absolute;
+    right: 4px;
+    top: -11px;
+    z-index: 2;
+    cursor: pointer;
+    width: 35px;
+    height: 39px;
     background-image: url("assets/icons/iconmonstr-magnifier-6-48.png");
     background-size: 20px;
-    background-position: 110px 10px;
-    background-repeat: no-repeat; }
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    border: transparent;
+    background-color: #f1f1f1; }
 
   .input-li {
     display: inline;

@@ -120,8 +120,8 @@
   }
 
   #top-desktop-nav {
-    margin: 0 0 0 20px;
-    padding: 0;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
     border-bottom: 1px solid lightgrey;
     list-style: none;
   }
@@ -137,7 +137,7 @@
     content: " | ";
   }
 
-  input {
+  .search-field {
     width: 140px;
     padding-left: 20px;
     height: 41px;
@@ -145,10 +145,23 @@
     border-bottom: 1px solid black;
     background-color: $lightgrey;
     color: grey;
+    z-index: 1;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 4px;
+    top: -11px;
+    z-index: 2;
+    cursor: pointer;
+    width: 35px;
+    height: 39px;
     background-image: url('assets/icons/iconmonstr-magnifier-6-48.png');
     background-size: 20px;
-    background-position: 110px 10px;
+    background-position: 8px 8px;
     background-repeat: no-repeat;
+    border: transparent;
+    background-color: $lightgrey;
   }
 
   .input-li {
