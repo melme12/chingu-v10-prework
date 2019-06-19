@@ -5,27 +5,32 @@ function showHam() {
 }
 
 // Show submenu with click on plus icon
-function showSub1() {
-  var y = document.querySelector('#sub-menu-1');
-  y.classList.toggle('show1');
+function showSub1(subMenuId, showClass) {
+  var sMId = "#" + subMenuId;
+  var y = document.querySelector(sMId);
+  y.classList.toggle(showClass);
 }
 
 // Change plus icon to cross icon when clicked
 var image_tracker = 'plus';
-function change() {
-  var image = document.getElementById('showSub1img');
+function change(liId, showSubImg, blueLiA) {
+  var image = document.getElementById(showSubImg);
   if (image_tracker == 'plus') {
     image.src = 'assets/icons/iconmonstr-x-mark-2-24.png';
     image_tracker = 'cross';
-    document.getElementById('blue-grey-li').style.background = "#dfe0e6";
-    document.getElementById('blue-li-a').style.color = "#282f54";
+    document.getElementById(liId).style.background = "#dfe0e6";
+    document.getElementById(blueLiA).style.color = "#282f54";
     } else {
       image.src = 'assets/icons/iconmonstr-plus-2-24.png';
       image_tracker = 'plus';
-      document.getElementById('blue-grey-li').style.background = "#282f54";
-     document.getElementById('blue-li-a').style.color = "#ffffff";
+      document.getElementById(liId).style.background = "#282f54";
+     document.getElementById(blueLiA).style.color = "#ffffff";
     }
   }
+//This function has to set everything back when it is called again! -or maybe not, look at original site
+//Look after the image tracker, too.
+
+
 
 // Show Share box
 function showShareIcons() {  

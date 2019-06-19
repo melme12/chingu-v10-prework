@@ -60,6 +60,10 @@ h2 {
   font-weight: 700;
   text-decoration: none; }
 
+.gray-li a {
+  color: black;
+  text-decoration: none; }
+
 .white-li a {
   color: black;
   text-decoration: none; }
@@ -253,13 +257,19 @@ header {
   padding: 0;
   list-style: none; }
 
-.show {
+.show,
+.show1,
+.show2,
+.show3,
+.show4,
+.show5 {
   display: none; }
 
-.show1 {
-  display: none; }
-
-#sub-menu-1 {
+#sub-menu-1,
+#sub-menu-2,
+#sub-menu-3,
+#sub-menu-4,
+#sub-menu-5 {
   margin: 0;
   padding: 0;
   list-style: none; }

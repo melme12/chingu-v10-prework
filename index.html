@@ -27,9 +27,10 @@
     <!-- mobile dropdown menu: hidden on default and will open with click on hamburger menu-->
     <nav class="toggle-on-desktop">
       <ul id="main-menu" class="show">
-        <li class="blue-li" id="blue-grey-li">
-          <a id="blue-li-a" href="https://www.lloyds.com/news-and-risk-insight">News and risk insight</a>
-          <span onclick="showSub1();change();">
+
+        <li class="blue-li" id="blue-grey-li-1">
+          <a id="blue-li-a-1" href="https://www.lloyds.com/news-and-risk-insight">News and risk insight</a>
+          <span onclick="showSub1('sub-menu-1', 'show1'); change('blue-grey-li-1','showSub1img', 'blue-li-a-1');">
             <img class="plus-icon" id="showSub1img"  src="assets/icons/iconmonstr-plus-2-24.png" />
           </span>
         </li><!--opens first submenu-->
@@ -65,46 +66,263 @@
             <a href="https://futureat.lloyds.com/propsectus">Future at Lloyd's</a>
           </li>
         </ul>
-        <li class="blue-li">
-          <a href="https://www.lloyds.com/market-directory">Market directory</a>
-          <span>
-            <img class="plus-icon" id="sub-menu-toggle-1" src="assets/icons/iconmonstr-plus-2-24.png" />
+
+        <li class="blue-li" id="blue-grey-li-2">
+          <a id="blue-li-a-2" href="https://www.lloyds.com/market-directory">Market directory</a>
+          <span onclick="showSub1('sub-menu-2', 'show2'); change('blue-grey-li-2','showSub2img', 'blue-li-a-2');">
+            <img class="plus-icon" id="showSub2img" src="assets/icons/iconmonstr-plus-2-24.png" />
           </span>
         </li><!--opens second submenu-->
-        <ul id="sub-menu-1" class="show1">
-          <li></li>
-          <li></li>
+        <ul id="sub-menu-2" class="show2">
+          <li class="gray-li">
+            <a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&bro_num=&pseudo=&name=&loc=&bro=1&cov=0&man=0&mem=0&omc=0&run=0">Brokers</a>
+          </li>
+          <li class="gray-li">
+              <a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&bro_num=&pseudo=&name=&loc=&bro=0&cov=1&man=0&mem=0&omc=0&run=0">Coverholders</a>
+          </li>
+          <li class="gray-li">
+            <a href="https://www.lloyds.com/the-market/directories/results?mode=bro&cobc=0&cob=&name=&ltti=&fca_num=&loc=&bro=0&cov=0&man=1&mem=0&omc=0&run=0">Managing agents</a>
+          </li>
+          <li class="gray-li">
+            <a href="https://www.lloyds.com/the-market/directories/results?mode=man&cobc=0&cob=&name=&syn_num=&loc=&bro=0&cov=0&man=0&mem=1&omc=0&run=0">Members’ agents</a>
+          </li>
+          <li class="gray-li">
+            <a href="https://www.lloyds.com/the-market/directories/results?mode=mem&name=&loc=&bro=0&cov=0&man=0&mem=0&omc=1&run=0">Open Market Correspondents</a>
+          </li>
+          <li class="gray-li">
+            <a href="https://www.lloyds.com/the-market/directories/results?mode=omc&name=&loc=&bro=0&cov=0&man=0&mem=0&omc=0&run=1">Run off brokers</a>
+          </li>
+          <li class="gray-li">
+            <a href="https://www.lloyds.com/market-directory/committees-,-a-,-associations">Committees and associations</a>
+          </li>
         </ul>
-        <li class="blue-li">
-          <a href="https://www.lloyds.com/market-resources">Market resources</a>
-          <span>
-            <img class="plus-icon" src="assets/icons/iconmonstr-plus-2-24.png" />
+
+        <li class="blue-li" id="blue-grey-li-3">
+          <a id="blue-li-a-3" href="https://www.lloyds.com/market-resources">Market resources</a>
+          <span onclick="showSub1('sub-menu-3', 'show3'); change('blue-grey-li-3','showSub3img', 'blue-li-a-3');">
+            <img class="plus-icon" id="showSub3img" src="assets/icons/iconmonstr-plus-2-24.png" />
           </span>
         </li><!--opens third submenu-->
-        <ul id="sub-menu-1" class="show1">
-          <li></li>
-          <li></li>
+        <ul id="sub-menu-3" class="show3">          
+          <li class="gray-li">
+            <a href="#">Capital and reserving</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Claims</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Complaints</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Data and research</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Delegated Authorities</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Finance and investment</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Lloyd’s Agency</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Market communications</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Market services</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Professional development</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Regulatory</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Requirements and standards</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Tax</a>
+          </li>
+          <li class="gray-li">
+            <a href="#">Underwriting</a>
+          </li>
         </ul>
-        <li class="blue-li">
-          <a href="https://www.lloyds.com/tools-and-systems">Tools and systems</a>
-          <span>
-            <img class="plus-icon" src="assets/icons/iconmonstr-plus-2-24.png" />
-          </span>
-        </li><!--opens fourth submenu-->
-        <ul id="sub-menu-1" class="show1">
-          <li></li>
-          <li></li>
-        </ul>
-        <li class="blue-li">
-          <a href="https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a>
-          <span>
-            <img class="plus-icon" src="assets/icons/iconmonstr-plus-2-24.png" />
-          </span>
-        </li><!--opens last submenu-->
-        <ul id="sub-menu-1" class="show1">
-          <li></li>
-          <li></li>
-        </ul>
+
+        <li class="blue-li" id="blue-grey-li-4">
+            <a id="blue-li-a-4" href="https://www.lloyds.com/tools-and-systems">Tools and systems</a>
+            <span  onclick="showSub1('sub-menu-4', 'show4'); change('blue-grey-li-4','showSub4img', 'blue-li-a-4');">
+              <img class="plus-icon" id="showSub4img" src="assets/icons/iconmonstr-plus-2-24.png" />
+            </span>
+          </li><!--opens fourth submenu-->
+          <ul id="sub-menu-4" class="show4">
+            <li class="gray-li">
+              <a href="#">AiMS</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Atlas</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Binding Authority Registration</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Business timetable</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Chorus</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Core Market Returns</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Crystal</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Doprint</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Funds at Lloyd's</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Lineage</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Lloyd's wordings repository</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Member modelling software</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Mocha</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Quality assurance tools</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Risk locator</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Secure store</a>
+            </li>
+            <li class="gray-li">
+              <a href="#">Workbench</a>
+            </li>
+          </ul>
+
+          <li class="blue-li" id="blue-grey-li-5">
+              <a id="blue-li-a-5" href="https://www.lloyds.com/lloyds-around-the-world">Lloyd's around the world</a>
+              <span onclick="showSub1('sub-menu-5', 'show5'); change('blue-grey-li-5','showSub5img', 'blue-li-a-5');">
+                <img class="plus-icon" id="showSub5img" src="assets/icons/iconmonstr-plus-2-24.png" />
+              </span>
+            </li><!--opens fifth submenu-->
+            <ul id="sub-menu-5" class="show5">
+              <li class="lightblue-li">Africa & Middle-East</li>
+              <li class="gray-li">
+                <a href="#">Dubai</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Maroc</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Namibia</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">South Africa</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Zimbabwe</a>
+              </li>
+              <li class="lightblue-li">Americas</li>
+              <li class="gray-li">
+                <a href="#">Argentina</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Brazil</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Canada</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Colombia</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Mexico</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">United States of America</a>
+              </li>
+              <li class="lightblue-li">Asia & Pacific</li>
+              <li class="gray-li">
+                <a href="#">Australia</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">China</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Hong Kong</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">India</a>
+              </li>
+              <li class="gray-li">
+                    <a href="#">Japan</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">New Zealand</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Singapore</a>
+              </li>
+              <li class="lightblue-li">Europe</li>
+              <li class="gray-li">
+                <a href="#">Austria</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Brussels European HQ</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Denmark</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">France</a>
+              </li>
+              <li class="gray-li">
+                    <a href="#">Germany</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Israel</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Italy</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Lithuania</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Malta</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Netherlands</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Norway</a>
+              </li>
+              <li class="gray-li">
+                    <a href="#">Poland</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Spain</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Sweden</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">Switzerland</a>
+              </li>
+              <li class="gray-li">
+                <a href="#">United Kingdom</a>
+              </li>
+            </ul>
+          
         <li class="white-li">
           <a href="https://www.lloyds.com/about-lloyds">About</a>
         </li>
