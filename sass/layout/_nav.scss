@@ -81,6 +81,7 @@ width: 48px;
 .gray-li {
   display: block;
   padding: 10px 10px 10px 20px;
+  //padding-left: 20px;
   background-color: #dfe0e6;
   border-bottom: 1px solid white;
 
@@ -90,6 +91,12 @@ width: 48px;
   padding-right: 5px;
   display: inline-block;
   vertical-align: sub;
+  }
+
+  a {
+    //display: block;
+    //width: 80%;
+    //padding: 10px 10px 10px 20px;
   }
 }
 
