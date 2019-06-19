@@ -52,6 +52,9 @@ h2 {
   text-decoration: none; }
 
 .blue-li a {
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px 15px;
   font-size: 14px;
   color: white;
   font-weight: 700;
@@ -105,7 +108,7 @@ h2 {
 .plus-icon {
   width: 16px;
   height: 16px;
-  cursor: pointer; }
+  margin: 15px; }
 
 .social-icon {
   width: 25px;
@@ -271,9 +274,12 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 15px;
   background-color: #282f54;
   border-bottom: 1px solid white; }
+  .blue-li span {
+    cursor: pointer;
+    height: 48px;
+    width: 48px; }
 
 .gray-li {
   display: block;
