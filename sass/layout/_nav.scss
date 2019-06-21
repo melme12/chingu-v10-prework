@@ -102,6 +102,7 @@
   display: block;
   background-color: white;
   border-bottom: 1px solid #e6e6e6;
+  height: 47px;
 
   a {
     display: block;
@@ -110,5 +111,8 @@
 }
 
 .lightblue-li {
- //NEXT HERE
+  background-color: #d6d9ef;
+  border-bottom: 1px solid white;
+  display: block;
+  padding: 15px;
 }
