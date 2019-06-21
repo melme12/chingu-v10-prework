@@ -129,7 +129,6 @@ h2 {
     a {
       text-decoration: none;
       color: black;
-      
 
       &:hover {
         text-decoration: underline;
@@ -138,9 +137,15 @@ h2 {
   }
 
   .hover-last-sub-nav {
-    text-decoration: none;
-    color: black;
-    width: 310px;
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
 }

@@ -98,10 +98,11 @@ h2 {
     .hover-sub-nav a:hover {
       text-decoration: underline; }
 
-  .hover-last-sub-nav {
+  .hover-last-sub-nav a {
     text-decoration: none;
-    color: black;
-    width: 310px; } }
+    color: black; }
+    .hover-last-sub-nav a:hover {
+      text-decoration: underline; } }
 .download {
   display: inline;
   background-color: #0c4ab5;
@@ -506,6 +507,21 @@ header {
       .hover-sub-nav li a {
         display: block; }
 
+  .fifth-sub-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 254px; }
+
   .hover-last-sub-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -521,10 +537,43 @@ header {
     flex-direction: column;
     list-style: none;
     margin: 0;
-    padding: 0;
-    height: 254px; }
+    padding: 0; }
     .hover-last-sub-nav li {
-      padding: 10px 0; } }
+      padding: 10px 0;
+      width: 230px; }
+
+  .country-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .country-content li {
+      padding: 10px 0;
+      min-width: 172px; }
+      .country-content li a {
+        display: block;
+        color: black;
+        text-decoration: none; }
+        .country-content li a:hover {
+          text-decoration: underline; }
+
+  #asia,
+  #americas,
+  #asia,
+  #europe {
+    display: none; } }
 footer {
   padding-top: 10px;
   background-color: black;
