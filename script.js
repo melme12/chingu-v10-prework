@@ -63,10 +63,10 @@ function hideSub(subMenuId) {
 }
 
 // Sub sub Menus Desktop Version (countries)
-function showSubSub(subSubMenuId) {
+function showSubCountries(subSubMenuId) {
   document.getElementById(subSubMenuId).style.display = "block";
 }
 
-function hideSubSub(subSubMenuId) {
+function hideSubCountries(subSubMenuId) {
   document.getElementById(subSubMenuId).style.display = "none";
 }

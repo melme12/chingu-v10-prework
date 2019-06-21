@@ -254,6 +254,13 @@
     }
   }
 
+  #africa, 
+  #americas, 
+  #asia, 
+  #europe {
+    display: none;
+  }
+
   .country-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -287,13 +294,5 @@
       }
     }
   }
-
-  #asia, 
-  #americas, 
-  #asia, 
-  #europe {
-    display: none;
-  }
-
 
 }
