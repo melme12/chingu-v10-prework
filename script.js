@@ -29,7 +29,15 @@ function change(liId, showSubImg, blueLiA) {
   }
 //Look after the image tracker, the icons change too often.
 
-
+//other function for changing the icon:
+function changeIcon(imgId) {
+  if (document.getElementById(imgId).src == "assets/icons/iconmonstr-plus-2-24.png") {
+    document.getElementById(imgId).src = "assets/icons/iconmonstr-x-mark-2-24.png";
+  } else 
+  {
+      document.getElementById(imgId).src = "assets/icons/iconmonstr-plus-2-24.png";
+  }
+}
 
 // Show Share box
 function showShareIcons() {  
@@ -60,13 +68,4 @@ function showSub(subMenuId) {
 
 function hideSub(subMenuId) {
   document.getElementById(subMenuId).style.display = "none";
-}
-
-// Sub sub Menus Desktop Version (countries)
-function showSubCountries(subSubMenuId) {
-  document.getElementById(subSubMenuId).style.display = "block";
-}
-
-function hideSubCountries(subSubMenuId) {
-  document.getElementById(subSubMenuId).style.display = "none";
 }

@@ -480,14 +480,14 @@
         <p>Lloyd's around the world</p>
         <div class="fifth-sub-box">
           <ul class="hover-last-sub-nav">
-            <li onmouseover="showSubCountries('africa')" onmouseout="hideSubCountries('africa')">Africa & Middle-East</li>
-            <li onmouseover="showSubCountries('americas')" onmouseout="hideSubCountries('americas')">Americas</li>
-            <li onmouseover="showSubCountries('asia')" onmouseout="hideSubCountries('asia')">Asia & Pacific</li>
-            <li onmouseover="showSubCountries('europe')" onmouseout="hideSubCountries('europe')">Europe</li>
+            <li onmouseover="showSub('africa')" onmouseout="hideSub('africa')">Africa & Middle-East</li>
+            <li onmouseover="showSub('americas')" onmouseout="hideSub('americas')">Americas</li>
+            <li onmouseover="showSub('asia')" onmouseout="hideSub('asia')">Asia & Pacific</li>
+            <li onmouseover="showSub('europe')" onmouseout="hideSub('europe')">Europe</li>
           </ul>
 
           <!--AFRICA add class to be shown /hidden with changeinnerhtml()-->
-          <div id="africa" onmouseover="showSubCountries('africa')" onmouseout="hideSubCountries('africa')">
+          <div id="africa" onmouseover="showSub('africa')" onmouseout="hideSub('africa')">
             <ul class="country-content">
               <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/dubai">Dubai</a></li>
               <li><a href="https://www.lloyds.com/lloyds-around-the-world/africa/maroc">Maroc</a></li>
@@ -498,7 +498,7 @@
           </div>
           
           <!--AMERICAS add class to be shown /hidden with changeinnerhtml()-->
-          <div id="americas"  onmouseover="showSubCountries('americas')" onmouseout="hideSubCountries('ameriacs')">
+          <div id="americas"  onmouseover="showSub('americas')" onmouseout="hideSub('ameriacs')">
             <ul class="country-content">
               <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/argentina">Argentina</a></li>
               <li><a href="https://www.lloyds.com/lloyds-around-the-world/americas/brazil-em-portugues">Brazil</a></li>
@@ -510,7 +510,7 @@
           </div>
     
           <!--ASIA add class to be shown /hidden with changeinnerhtml()-->
-          <div id="asia" onmouseover="showSubCountries('asia')" onmouseout="hideSubCountries('asia')">
+          <div id="asia" onmouseover="showSub('asia')" onmouseout="hideSub('asia')">
             <ul class="country-content">
               <li><a href="https://www.lloyds.com/lloyds-around-the-world/australasia/australia">Australia</a></li>
               <li><a href="https://www.lloyds.com/lloyds-around-the-world/asia/china">China</a></li>
@@ -523,7 +523,7 @@
           </div>
           
           <!--EUROPE add class to be shown /hidden with changeinnerhtml()-->
-          <div id="europe" onmouseover="showSubCountries('europe')" onmouseout="hideSubCountries('europe')">
+          <div id="europe" onmouseover="showSub('europe')" onmouseout="hideSub('europe')">
             <ul class="country-content">
               <li><a href="https://www.lloyds.com/lloyds-around-the-world/europe/osterreich-auf-deutsch">Austria</a></li>
               <li><a href="https://www.lloyds.com/redirect-pages/brussels">Brussels European HQ</a></li>
