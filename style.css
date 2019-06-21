@@ -92,12 +92,16 @@ h2 {
       #top-desktop-nav a:hover {
         text-decoration: underline; }
 
-  #hover-sub-nav a {
+  .hover-sub-nav a {
+    text-decoration: none;
+    color: black; }
+    .hover-sub-nav a:hover {
+      text-decoration: underline; }
+
+  .hover-last-sub-nav {
     text-decoration: none;
     color: black;
-    width: 310px; }
-    #hover-sub-nav a:hover {
-      text-decoration: underline; } }
+    width: 310px; } }
 .download {
   display: inline;
   background-color: #0c4ab5;
@@ -417,37 +421,44 @@ header {
     list-style: none;
     width: 100%; }
     #second-desktop-nav li {
-      padding: 10px 0;
       width: calc(975px / 5);
       text-align: center;
       font-weight: 700;
       font-size: 14px; }
+      #second-desktop-nav li a {
+        display: block;
+        padding: 10px; }
 
   .last-li {
     border-right: #282f54; }
 
-  .desk-first-nav-a {
-    color: #282f54;
-    text-decoration: none;
-    border-right: 1px solid white; }
-    .desk-first-nav-a li {
-      background-color: #dfe0e6; }
-    .desk-first-nav-a:hover {
-      text-decoration: underline; }
-      .desk-first-nav-a:hover li {
-        background-color: #f1f1f1; }
+  .desk-first-nav {
+    background-color: #dfe0e6; }
+    .desk-first-nav a {
+      color: #282f54;
+      text-decoration: none; }
+      .desk-first-nav a:hover {
+        text-decoration: underline;
+        color: black; }
+    .desk-first-nav:hover {
+      background-color: #f1f1f1; }
 
-  .desk-other-nav-a {
-    background-color: #282f54;
-    text-decoration: none;
-    color: white; }
-    .desk-other-nav-a:hover {
-      text-decoration: underline;
-      color: #282f54; }
-      .desk-other-nav-a:hover li {
-        background-color: #f1f1f1; }
+  .desk-other-nav {
+    background-color: #282f54; }
+    .desk-other-nav a {
+      color: white;
+      text-decoration: none; }
+      .desk-other-nav a:hover {
+        text-decoration: underline;
+        color: black; }
+    .desk-other-nav:hover {
+      background-color: #f1f1f1; }
 
-  #desk-first-nav-sub {
+  #desk-first-nav-sub,
+  #desk-second-nav-sub,
+  #desk-third-nav-sub,
+  #desk-fourth-nav-sub,
+  #desk-fifth-nav-sub {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -456,21 +467,24 @@ header {
     -webkit-box-shadow: 0 0 10px #414141;
     box-shadow: 0 0 10px #414141;
     width: 980px;
-    height: 250px;
     margin: 0 auto;
     top: 102px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
-    #desk-first-nav-sub p {
+    #desk-first-nav-sub p,
+    #desk-second-nav-sub p,
+    #desk-third-nav-sub p,
+    #desk-fourth-nav-sub p,
+    #desk-fifth-nav-sub p {
       font-size: 14px;
       font-weight: 700;
       margin: 0 0 20px 0;
       padding: 0 0 10px 0;
       border-bottom: 1px solid black; }
 
-  #hover-sub-nav {
+  .hover-sub-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -486,7 +500,30 @@ header {
     list-style: none;
     margin: 0;
     padding: 0; }
-    #hover-sub-nav li {
+    .hover-sub-nav li {
+      padding: 10px 0;
+      width: 310px; }
+      .hover-sub-nav li a {
+        display: block; }
+
+  .hover-last-sub-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 254px; }
+    .hover-last-sub-nav li {
       padding: 10px 0; } }
 footer {
   padding-top: 10px;

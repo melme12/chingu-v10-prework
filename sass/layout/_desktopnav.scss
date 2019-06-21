@@ -102,52 +102,63 @@
     width: 100%;
     
     li {
-      padding: 10px 0;
       width: calc(975px / 5);
       text-align: center;
       font-weight: 700;
       font-size: 14px;
+
+      a {
+        display: block;
+        padding: 10px;
+      }
     }
   }
   
   .last-li {
-    border-right: #282f54;
+    border-right: $darkblue;
   }
 
-  .desk-first-nav-a {
-    color: $darkblue;
-    text-decoration: none;
-    border-right: 1px solid white;
+  .desk-first-nav {
+    background-color: #dfe0e6;
 
-    li {
-      background-color: #dfe0e6;
-    }
-
-    &:hover {
-      text-decoration: underline;
-
-      li {
-        background-color: $lightgrey;
-      }
-    }
-  }
-
-  .desk-other-nav-a {
-    background-color: $darkblue;
-    text-decoration: none;
-    color: white;
-
-    &:hover {
-      text-decoration: underline;
+    a {
       color: $darkblue;
+      text-decoration: none;
 
-      li {
-        background-color: $lightgrey;
+      &:hover {
+        text-decoration: underline;
+        color: black;
       }
+    }
+
+    &:hover {
+      background-color: $lightgrey;
     }
   }
 
-  #desk-first-nav-sub {
+  .desk-other-nav {
+    background-color: $darkblue;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: black;
+      }
+    }
+
+    &:hover {
+      background-color: $lightgrey;
+    }
+  }
+
+  #desk-first-nav-sub, 
+  #desk-second-nav-sub, 
+  #desk-third-nav-sub, 
+  #desk-fourth-nav-sub, 
+  #desk-fifth-nav-sub {
     display: none;
     position: absolute;
     background-color: $lightgrey;
@@ -156,7 +167,6 @@
     -webkit-box-shadow: 0 0 10px #414141;
             box-shadow: 0 0 10px #414141;
     width: $content-width;
-    height: 250px;
     margin: 0 auto;
     top: 102px;
     //Center absolute item:
@@ -174,7 +184,7 @@
     }
   }
 
-  #hover-sub-nav {
+  .hover-sub-nav{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -191,8 +201,40 @@
     margin: 0;
     padding: 0;
     
+    
+    li {
+      padding: 10px 0;
+      width: 310px;
+
+      a {
+        display: block;
+      }
+    }
+  }
+
+  .hover-last-sub-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: left;
+       -ms-flex-pack: left;
+     justify-content: left;
+     //CHANGED FLEX-DIRECTION
+        -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    //HEIGHT
+    height: 254px;
+    
     li {
       padding: 10px 0;
     }
   }
+
 }

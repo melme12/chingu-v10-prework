@@ -124,12 +124,12 @@ h2 {
     }
   }
 
-  #hover-sub-nav {
+  .hover-sub-nav {
     
     a {
       text-decoration: none;
       color: black;
-      width: 310px;
+      
 
       &:hover {
         text-decoration: underline;
@@ -137,5 +137,10 @@ h2 {
     }
   }
 
+  .hover-last-sub-nav {
+    text-decoration: none;
+    color: black;
+    width: 310px;
+  }
 
 }

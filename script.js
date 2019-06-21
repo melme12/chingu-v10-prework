@@ -27,8 +27,7 @@ function change(liId, showSubImg, blueLiA) {
      document.getElementById(blueLiA).style.color = "#ffffff";
     }
   }
-//This function has to set everything back when it is called again! -or maybe not, look at original site
-//Look after the image tracker, too.
+//Look after the image tracker, the icons change too often.
 
 
 
@@ -54,10 +53,11 @@ function styleBlackSocialBox() {
     }
 }
 
-function showSub() {
-  document.getElementById("desk-first-nav-sub").style.display = "block";
+// Sub Menus Desktop Version
+function showSub(subMenuId) {
+  document.getElementById(subMenuId).style.display = "block";
 }
 
-function hideSub() {
-  document.getElementById("desk-first-nav-sub").style.display = "none";
+function hideSub(subMenuId) {
+  document.getElementById(subMenuId).style.display = "none";
 }
