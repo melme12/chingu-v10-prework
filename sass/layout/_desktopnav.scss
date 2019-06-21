@@ -200,8 +200,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    
-    
+        
     li {
       padding: 10px 0;
       width: 310px;
@@ -270,11 +269,11 @@
     -webkit-box-pack: left;
        -ms-flex-pack: left;
      justify-content: left;
-     -webkit-box-orient: horizontal;
-     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-            align-content: flex-start;
+       -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+    align-content: flex-start;
     list-style: none;
     margin: 0;
     padding: 0;

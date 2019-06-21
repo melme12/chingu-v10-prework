@@ -51,15 +51,6 @@ h2 {
   color: black;
   text-decoration: none; }
 
-.blue-li a {
-  display: block;
-  width: 100%;
-  padding: 15px 0 15px 15px;
-  font-size: 14px;
-  color: white;
-  font-weight: 700;
-  text-decoration: none; }
-
 .gray-li a {
   color: black;
   text-decoration: none; }
@@ -305,7 +296,11 @@ header {
   padding: 0;
   list-style: none; }
 
-.blue-li {
+#blue-grey-li-1,
+#blue-grey-li-2,
+#blue-grey-li-3,
+#blue-grey-li-4,
+#blue-grey-li-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,10 +310,34 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #282f54;
   border-bottom: 1px solid white; }
-  .blue-li span {
+  #blue-grey-li-1 a,
+  #blue-grey-li-2 a,
+  #blue-grey-li-3 a,
+  #blue-grey-li-4 a,
+  #blue-grey-li-5 a {
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none; }
+  #blue-grey-li-1 span,
+  #blue-grey-li-2 span,
+  #blue-grey-li-3 span,
+  #blue-grey-li-4 span,
+  #blue-grey-li-5 span {
     cursor: pointer; }
+
+.blue-li-active {
+  background-color: #dfe0e6; }
+  .blue-li-active a {
+    color: #282f54; }
+
+.blue-li-inactive {
+  background-color: #282f54; }
+  .blue-li-inactive a {
+    color: white; }
 
 .gray-li {
   display: block;

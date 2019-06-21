@@ -11,34 +11,18 @@ function showSub1(subMenuId, showClass) {
   y.classList.toggle(showClass);
 }
 
-function changeIcon(icon) {
+// Change Icon and colors with click on '+'
+function changeIcon(icon, listBg) {
   var iconId = "#" + icon;
   var a = document.querySelector(iconId);
   a.classList.toggle('bg-cross');
   a.classList.toggle('bg-plus');
+
+  var ListBgId = "#" + listBg;
+  var b = document.querySelector(ListBgId);
+  b.classList.toggle('blue-li-active');
+  b.classList.toggle('blue-li-inactive');
 }
-
-// Change plus icon to cross icon when clicked
-var image_tracker = 'plus';
-function change(liId, showSubImg, blueLiA) {
-  var image = document.getElementById(showSubImg);
-  if (image_tracker == 'plus') {
-    image.src = 'assets/icons/iconmonstr-x-mark-2-24.png';
-    image_tracker = 'cross';
-    document.getElementById(liId).style.background = "#dfe0e6";
-    document.getElementById(blueLiA).style.color = "#282f54";
-    } else {
-      image.src = 'assets/icons/iconmonstr-plus-2-24.png';
-      image_tracker = 'plus';
-      document.getElementById(liId).style.background = "#282f54";
-     document.getElementById(blueLiA).style.color = "#ffffff";
-    }
-  }
-//Look after the image tracker, the icons change too often.
-
-//other function for changing the icon:
-// look at the hamburger
-
 
 // Show Share box
 function showShareIcons() {  
