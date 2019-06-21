@@ -120,9 +120,30 @@ h2 {
   cursor: pointer; }
 
 .plus-icon {
+  display: block;
   width: 16px;
   height: 16px;
   margin: 15px; }
+
+.bg-plus {
+  background-image: url("assets/icons/iconmonstr-plus-2-24.png"); }
+
+.bg-cross {
+  background-image: url("assets/icons/iconmonstr-x-mark-2-24.png"); }
+
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+  height: 48px;
+  width: 48px;
+  background-size: 16px;
+  background-position: 15px 15px;
+  background-repeat: no-repeat; }
+
+#showSub1imgCross {
+  display: none; }
 
 .social-icon {
   width: 25px;
@@ -297,9 +318,7 @@ header {
   background-color: #282f54;
   border-bottom: 1px solid white; }
   .blue-li span {
-    cursor: pointer;
-    height: 48px;
-    width: 48px; }
+    cursor: pointer; }
 
 .gray-li {
   display: block;

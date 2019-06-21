@@ -11,6 +11,13 @@ function showSub1(subMenuId, showClass) {
   y.classList.toggle(showClass);
 }
 
+function changeIcon(icon) {
+  var iconId = "#" + icon;
+  var a = document.querySelector(iconId);
+  a.classList.toggle('bg-cross');
+  a.classList.toggle('bg-plus');
+}
+
 // Change plus icon to cross icon when clicked
 var image_tracker = 'plus';
 function change(liId, showSubImg, blueLiA) {
@@ -30,14 +37,8 @@ function change(liId, showSubImg, blueLiA) {
 //Look after the image tracker, the icons change too often.
 
 //other function for changing the icon:
-function changeIcon(imgId) {
-  if (document.getElementById(imgId).src == "assets/icons/iconmonstr-plus-2-24.png") {
-    document.getElementById(imgId).src = "assets/icons/iconmonstr-x-mark-2-24.png";
-  } else 
-  {
-      document.getElementById(imgId).src = "assets/icons/iconmonstr-plus-2-24.png";
-  }
-}
+// look at the hamburger
+
 
 // Show Share box
 function showShareIcons() {  
