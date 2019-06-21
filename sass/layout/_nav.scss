@@ -41,22 +41,31 @@
   list-style: none;
 }
 
-.show {
+.show, 
+.show1, 
+.show2, 
+.show3, 
+.show4, 
+.show5 {
   display: none;
 }
 
-.show1 {
-  display: none;
-}
-
-#sub-menu-1 {
+#sub-menu-1, 
+#sub-menu-2, 
+#sub-menu-3, 
+#sub-menu-4, 
+#sub-menu-5 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 // 2. Level Navigation with blue bg
-.blue-li {
+#blue-grey-li-1,
+#blue-grey-li-2,
+#blue-grey-li-3,
+#blue-grey-li-4,
+#blue-grey-li-5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,229 +75,71 @@
   -webkit-box-pack: justify;
      -ms-flex-pack: justify;
    justify-content: space-between;
-  padding: 15px;
-  background-color: $darkblue;
+  // background-color: $darkblue;
   border-bottom: 1px solid white;
+  
+  a {
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  span {
+    cursor: pointer;
+  }
+}
+
+.blue-li-active {
+  background-color: #dfe0e6;
+  
+  a{
+    color: $darkblue;
+  }
+}
+
+.blue-li-inactive {
+  background-color: $darkblue;
+  
+  a {
+    color: white;
+  }
 }
 
 .gray-li {
   display: block;
-  padding: 10px 10px 10px 20px;
+  height: 47px;
   background-color: #dfe0e6;
   border-bottom: 1px solid white;
 
-  &::before {
-    content: url("assets/icons/iconmonstr-angel-right-thin-16.png");
-  font-size: 22px;
-  padding-right: 5px;
-  display: inline-block;
-  vertical-align: sub;
+  background-image: url("assets/icons/iconmonstr-angel-right-thin-16.png");
+  background-position: 20px 15px;
+  background-repeat: no-repeat;
+  background-size: 16px;
+
+  a {
+    padding: 13px 10px 13px 45px;
+    display: block;
   }
 }
 
 .white-li {
   display: block;
-  padding: 15px;
   background-color: white;
   border-bottom: 1px solid #e6e6e6;
+  height: 47px;
+
+  a {
+    display: block;
+    padding: 15px;
+  }
 }
 
-
-@media screen and (min-width: 1041px) {
-  /* top menu shows and desktop view is achieved */
-  .toggle-on-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
-  .toggle-on-desktop {
-    display: none;
-  }
-
-  .first-nav-row {
-       -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-       -ms-flex-direction: row;
-           flex-direction: row;
-    margin: 0 auto;
-    max-width: $content-width;
-    -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-     justify-content: space-between;
-    padding: 0 0 20px 0;
-  }
-
-  #top-desktop-nav {
-    margin: 0 0 0 10px;
-    padding: 0 0 0 10px;
-    border-bottom: 1px solid lightgrey;
-    list-style: none;
-  }
-  
-  .top-nav-li {
-    display: inline;
-    vertical-align: middle;
-  }
-
-  .top-nav-li + .top-nav-li:before{
-    font-size: 14px;
-    color: lightgrey;
-    content: " | ";
-  }
-
-  .search-field {
-    width: 140px;
-    padding-left: 20px;
-    height: 41px;
-    border: none;
-    border-bottom: 1px solid black;
-    background-color: $lightgrey;
-    color: grey;
-    z-index: 1;
-  }
-
-  .search-icon {
-    position: absolute;
-    right: 4px;
-    top: -11px;
-    z-index: 2;
-    cursor: pointer;
-    width: 35px;
-    height: 39px;
-    background-image: url('assets/icons/iconmonstr-magnifier-6-48.png');
-    background-size: 20px;
-    background-position: 8px 8px;
-    background-repeat: no-repeat;
-    border: transparent;
-    background-color: $lightgrey;
-  }
-
-  .input-li {
-    display: inline;
-    vertical-align: middle;
-    padding-left: 20px;
-  }
-
-  .second-nav-row {
-    margin: 0 auto;
-    max-width: $content-width;
-    -webkit-box-pack: center;
-       -ms-flex-pack: center;
-     justify-content: center;
-  }
-
-  #second-desktop-nav {
-    border-top: 1px solid $darkblue;
-    border-left: 1px transparent;
-    border-right: 1px transparent;
-    border-bottom: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-       -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-       -ms-flex-direction: row;
-           flex-direction: row;
-      -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    
-    li {
-      padding: 10px 0;
-      width: calc(975px / 5);
-      text-align: center;
-      font-weight: 700;
-      font-size: 14px;
-    }
-  }
-  
-  .last-li {
-    border-right: #282f54;
-  }
-
-  .desk-first-nav-a {
-    color: $darkblue;
-    text-decoration: none;
-    border-right: 1px solid white;
-
-    li {
-      background-color: #dfe0e6;
-    }
-
-    &:hover {
-      text-decoration: underline;
-
-      li {
-        background-color: $lightgrey;
-      }
-    }
-  }
-
-  .desk-other-nav-a {
-    background-color: $darkblue;
-    text-decoration: none;
-    color: white;
-
-    &:hover {
-      text-decoration: underline;
-      color: $darkblue;
-
-      li {
-        background-color: $lightgrey;
-      }
-    }
-  }
-
-  #desk-first-nav-sub {
-    display: none;
-    position: absolute;
-    background-color: $lightgrey;
-    color: black;
-    padding: 20px 25px;
-    -webkit-box-shadow: 0 0 10px #414141;
-            box-shadow: 0 0 10px #414141;
-    width: $content-width;
-    height: 250px;
-    margin: 0 auto;
-    top: 102px;
-    //Center absolute item:
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform:translateX(-50%);
-
-    p {
-      font-size: 14px;
-      font-weight: 700;
-      margin: 0 0 20px 0;
-      padding: 0 0 10px 0;
-      border-bottom: 1px solid black;
-    }
-  }
-
-  #hover-sub-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: left;
-       -ms-flex-pack: left;
-     justify-content: left;
-       -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-       -ms-flex-direction: row;
-           flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-    li {
-      padding: 10px 0;
-    }
-  }
+.lightblue-li {
+  background-color: #d6d9ef;
+  border-bottom: 1px solid white;
+  display: block;
+  padding: 15px;
 }

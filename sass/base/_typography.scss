@@ -63,18 +63,24 @@ h2 {
   }
 }
 
-.blue-li {
+.gray-li {
   a {
-    font-size: 14px;
-    color: white;
-    font-weight: 700;
+    color: black;
     text-decoration: none;
   }
 }
 
 .white-li {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.lightblue-li {
+  font-size: 14px;
+  font-weight: 700;
   color: black;
-  text-decoration: none;
 }
 
 @media screen and (min-width: 481px) {
@@ -106,12 +112,11 @@ h2 {
     }
   }
 
-  #hover-sub-nav {
+  .hover-sub-nav {
     
     a {
       text-decoration: none;
       color: black;
-      width: 310px;
 
       &:hover {
         text-decoration: underline;
@@ -119,5 +124,16 @@ h2 {
     }
   }
 
+  .hover-last-sub-nav {
+
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
 }

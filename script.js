@@ -5,27 +5,24 @@ function showHam() {
 }
 
 // Show submenu with click on plus icon
-function showSub1() {
-  var y = document.querySelector('#sub-menu-1');
-  y.classList.toggle('show1');
+function showSub1(subMenuId, showClass) {
+  var sMId = "#" + subMenuId;
+  var y = document.querySelector(sMId);
+  y.classList.toggle(showClass);
 }
 
-// Change plus icon to cross icon when clicked
-var image_tracker = 'plus';
-function change() {
-  var image = document.getElementById('showSub1img');
-  if (image_tracker == 'plus') {
-    image.src = 'assets/icons/iconmonstr-x-mark-2-24.png';
-    image_tracker = 'cross';
-    document.getElementById('blue-grey-li').style.background = "#dfe0e6";
-    document.getElementById('blue-li-a').style.color = "#282f54";
-    } else {
-      image.src = 'assets/icons/iconmonstr-plus-2-24.png';
-      image_tracker = 'plus';
-      document.getElementById('blue-grey-li').style.background = "#282f54";
-     document.getElementById('blue-li-a').style.color = "#ffffff";
-    }
-  }
+// Change Icon and colors with click on '+'
+function changeIcon(icon, listBg) {
+  var iconId = "#" + icon;
+  var a = document.querySelector(iconId);
+  a.classList.toggle('bg-cross');
+  a.classList.toggle('bg-plus');
+
+  var ListBgId = "#" + listBg;
+  var b = document.querySelector(ListBgId);
+  b.classList.toggle('blue-li-active');
+  b.classList.toggle('blue-li-inactive');
+}
 
 // Show Share box
 function showShareIcons() {  
@@ -49,10 +46,11 @@ function styleBlackSocialBox() {
     }
 }
 
-function showSub() {
-  document.getElementById("desk-first-nav-sub").style.display = "block";
+// Sub Menus Desktop Version
+function showSub(subMenuId) {
+  document.getElementById(subMenuId).style.display = "block";
 }
 
-function hideSub() {
-  document.getElementById("desk-first-nav-sub").style.display = "none";
+function hideSub(subMenuId) {
+  document.getElementById(subMenuId).style.display = "none";
 }
