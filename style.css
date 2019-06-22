@@ -165,7 +165,6 @@ header {
   background-color: #f1f1f1;
   padding-top: 15px; }
 
-/* Breadcrumbs */
 .breadcrumbs {
   padding: 0;
   margin: 0;
@@ -194,7 +193,6 @@ header {
     padding-right: 10px;
     vertical-align: middle; }
 
-/* Social Navigation */
 #header-social-nav {
   padding: 10px 0 15px 15px;
   background-color: black;
@@ -246,7 +244,7 @@ header {
   .text-box {
     width: 70%; } }
 .show-main-menu {
-  display: none !important; }
+  display: none; }
 
 .toggle-on-mobile {
   display: none; }
@@ -380,7 +378,6 @@ header {
   .desktop-menu {
     display: block; }
 
-  /* top menu shows and desktop view is achieved */
   .toggle-on-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,8 +566,7 @@ header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
-    height: 254px; }
+    flex-direction: row; }
 
   .hover-last-sub-nav {
     display: -webkit-box;
@@ -631,13 +627,11 @@ footer {
   footer li {
     padding: 5px 0; }
 
-/* Footer Navigation */
 .footer-nav {
   list-style: none;
   margin: 0;
   padding: 0; }
 
-/* Social Navigation */
 .social-nav {
   list-style: none;
   margin: 15px 0;

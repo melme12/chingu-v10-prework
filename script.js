@@ -1,9 +1,4 @@
 // Show Menu with click on hamburger
-// function showHam() {  
-//     var x = document.querySelector('#main-menu');
-//     x.classList.toggle('show');
-// }
-
 
 function showHam() {  
   var x = document.querySelector('#mobile-main-menu');
