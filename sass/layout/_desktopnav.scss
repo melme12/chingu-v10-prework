@@ -1,4 +1,8 @@
 @media screen and (min-width: 1041px) {
+  .desktop-menu {
+    display: block;
+  }
+
   /* top menu shows and desktop view is achieved */
   .toggle-on-mobile {
     display: -webkit-box;
